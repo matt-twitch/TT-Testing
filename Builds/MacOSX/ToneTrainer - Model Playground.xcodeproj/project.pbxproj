@@ -1,0 +1,1724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D00902180506C97716E591 /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = 0DF2EA144B70736551EAAC4D; };
+		0855825131B9A5A29E0BDEAC /* BinaryData2.cpp */ = {isa = PBXBuildFile; fileRef = 20E90F1FE05DD0FE3AB06265; };
+		0D400592CA3438F20A946408 /* include_juce_core.mm */ = {isa = PBXBuildFile; fileRef = CFA7DCC7376810F922185EF7; };
+		19E50645A609C11DED45FFD8 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = 7091342BF12CF6516D093EEA; };
+		25BDE9DB9C0F9080AAB6D875 /* include_juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = 10F2D64C7BD7ECFBF0735FE4; };
+		293508DF185C7A51512A0954 /* ConsoleApp */ = {isa = PBXBuildFile; fileRef = 030B38C2157FA963216642FE; };
+		2BB43B1C98676AA64FAC7C69 /* eight_bit_int_gemm.cc */ = {isa = PBXBuildFile; fileRef = 1B9530C52DEC611254B98AD4; };
+		38B3B80F1ACBE2D54D5E35AF /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 5740B9DDE4FEAC109BC11775; };
+		40D1EA31A2CE6BDFAE352664 /* TT_Formater.cpp */ = {isa = PBXBuildFile; fileRef = 7696D459AC5F6485A61C8447; };
+		670E3324337C62EF60AC33E1 /* RecentFilesMenuTemplate.nib */ = {isa = PBXBuildFile; fileRef = 274EE15A33D36FC2D0E246DF; };
+		8D0E141019EEC713B08E377A /* BinaryData.cpp */ = {isa = PBXBuildFile; fileRef = 336CB187148D8773200D1D5D; };
+		9ED1FB3D9FE225A4136BF705 /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = 5A4880BFE44F9303D1122D96; };
+		9F8D59E7F05EBA73FB8C35EC /* Main.cpp */ = {isa = PBXBuildFile; fileRef = 69E3E71F2899147FDD150104; };
+		A877095485330CF7BD7C10E3 /* TT_Filter.cpp */ = {isa = PBXBuildFile; fileRef = 52BEB2F69A65EFE0B4F8C431; };
+		E0D97B07A64EF6184BFE115C /* BinaryData3.cpp */ = {isa = PBXBuildFile; fileRef = 599C8F03533AFA4E2BE408F0; };
+		F900E03A670E7EC2D4950CB6 /* TT_Synthesiser.cpp */ = {isa = PBXBuildFile; fileRef = 97F612088771A746C0D84386; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01204FAB685091B5AB4924DF /* xtensor_forward.hpp */ /* xtensor_forward.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xtensor_forward.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xtensor_forward.hpp"; sourceTree = SOURCE_ROOT; };
+		01749924ED6566F89F19958C /* bitset.hpp */ /* bitset.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bitset.hpp; path = "../../Source/tiny-dnn-master/cereal/types/bitset.hpp"; sourceTree = SOURCE_ROOT; };
+		02991E2F8EDCC3505A59AF1F /* TT_ADSR.h */ /* TT_ADSR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TT_ADSR.h; path = ../../Source/TT_ADSR.h; sourceTree = SOURCE_ROOT; };
+		02E834EFE5184FB8F421FA81 /* compute.h */ /* compute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = compute.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/compute.h"; sourceTree = SOURCE_ROOT; };
+		030B38C2157FA963216642FE /* ConsoleApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ToneTrainer - Model Playground"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05599A6CBAC3925072DEC4A4 /* xstridedview.hpp */ /* xstridedview.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xstridedview.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xstridedview.hpp"; sourceTree = SOURCE_ROOT; };
+		06578E2CFCD77A6F4FDB4368 /* zip_Nx8_neon.py */ /* zip_Nx8_neon.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = zip_Nx8_neon.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/zip_Nx8_neon.py"; sourceTree = SOURCE_ROOT; };
+		06792E7CECBF1C5C74318BAA /* xcontainer.hpp */ /* xcontainer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcontainer.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xcontainer.hpp"; sourceTree = SOURCE_ROOT; };
+		06A6004669658AB71C61DEA7 /* elu_layer.h */ /* elu_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = elu_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/elu_layer.h"; sourceTree = SOURCE_ROOT; };
+		06C0ADE62FAC07007CAF48D4 /* layer_factory.h */ /* layer_factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = layer_factory.h; path = "../../Source/tiny-dnn-master/tiny_dnn/io/layer_factory.h"; sourceTree = SOURCE_ROOT; };
+		0725488C552782BF6B05584A /* kernel_default.h */ /* kernel_default.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = kernel_default.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/kernel_default.h"; sourceTree = SOURCE_ROOT; };
+		074F4625B6F069294938DF7D /* batch_reindex.cl */ /* batch_reindex.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = batch_reindex.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/batch_reindex.cl"; sourceTree = SOURCE_ROOT; };
+		08F216D7807FC5014CEE3D44 /* conv2d_grad_op_avx.h */ /* conv2d_grad_op_avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_grad_op_avx.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_grad_op_avx.h"; sourceTree = SOURCE_ROOT; };
+		0900DA402B76954F45B1954D /* xfunctorview.hpp */ /* xfunctorview.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xfunctorview.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xfunctorview.hpp"; sourceTree = SOURCE_ROOT; };
+		0A505F82990BA93962BBA52A /* conv_layer_spatial.cl */ /* conv_layer_spatial.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = conv_layer_spatial.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/conv_layer_spatial.cl"; sourceTree = SOURCE_ROOT; };
+		0A5C28A618714BF1C7380E95 /* graph_visualizer.h */ /* graph_visualizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graph_visualizer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/graph_visualizer.h"; sourceTree = SOURCE_ROOT; };
+		0AADADF703D06B79FFC99A30 /* lstm_cell.h */ /* lstm_cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lstm_cell.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/lstm_cell.h"; sourceTree = SOURCE_ROOT; };
+		0B80445C7075BBC0AA11F20F /* unpack_neon.h */ /* unpack_neon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unpack_neon.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/unpack_neon.h"; sourceTree = SOURCE_ROOT; };
+		0B9F09CA1BAB9E101AA6120E /* maxpool_op_internal.h */ /* maxpool_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = maxpool_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/maxpool_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		0CC517E808E9EAEC2389F16B /* access.hpp */ /* access.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = access.hpp; path = "../../Source/tiny-dnn-master/cereal/access.hpp"; sourceTree = SOURCE_ROOT; };
+		0DF2EA144B70736551EAAC4D /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		10D0F5F97E94239FACDF779E /* block_params.h */ /* block_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = block_params.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/block_params.h"; sourceTree = SOURCE_ROOT; };
+		10F2D64C7BD7ECFBF0735FE4 /* include_juce_data_structures.mm */ /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		1297371228EBAA9E4DAD2D99 /* xfunction.hpp */ /* xfunction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xfunction.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xfunction.hpp"; sourceTree = SOURCE_ROOT; };
+		12B4FC8541973738B4D28BD8 /* session.h */ /* session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = session.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/session.h"; sourceTree = SOURCE_ROOT; };
+		131C1A92AFBAF236746166CE /* lstm_cell_op.h */ /* lstm_cell_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lstm_cell_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/lstm_cell_op.h"; sourceTree = SOURCE_ROOT; };
+		131D64C0D823ED177CF7B5BD /* fully_connected_layer.h */ /* fully_connected_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/fully_connected_layer.h"; sourceTree = SOURCE_ROOT; };
+		1358DAA277F9BE84612828BA /* rapidjson.h */ /* rapidjson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rapidjson.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/rapidjson.h"; sourceTree = SOURCE_ROOT; };
+		1542B61133220DF6086FC590 /* fully_connected_op_avx.h */ /* fully_connected_op_avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_op_avx.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_op_avx.h"; sourceTree = SOURCE_ROOT; };
+		15CBF7188CEB6BBA7BFB8787 /* gru_cell_grad_op.h */ /* gru_cell_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gru_cell_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/gru_cell_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		15F58D160E71593FD1DC73B7 /* genericstream.h */ /* genericstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = genericstream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/genericstream.h"; sourceTree = SOURCE_ROOT; };
+		162374765ACC4FC7BFDFF428 /* portable_binary.hpp */ /* portable_binary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = portable_binary.hpp; path = "../../Source/tiny-dnn-master/cereal/archives/portable_binary.hpp"; sourceTree = SOURCE_ROOT; };
+		16669A80068282F9288DBBBC /* t10k-labels.idx1-ubyte */ /* t10k-labels.idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = "file.idx1-ubyte"; name = "t10k-labels.idx1-ubyte"; path = "../../Source/tiny-dnn-master/data/t10k-labels.idx1-ubyte"; sourceTree = SOURCE_ROOT; };
+		17B1E911A48417417616356E /* benchmark.cl */ /* benchmark.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = benchmark.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/benchmark.cl"; sourceTree = SOURCE_ROOT; };
+		18CAE479CF2ADC747866BFAF /* allocators.h */ /* allocators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = allocators.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/allocators.h"; sourceTree = SOURCE_ROOT; };
+		19622B77A5ED002D54C0037A /* backend.h */ /* backend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = backend.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/backend.h"; sourceTree = SOURCE_ROOT; };
+		199E6CC0D589F32FACED092A /* cells.h */ /* cells.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cells.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/cells.h"; sourceTree = SOURCE_ROOT; };
+		19DB110528A707EF57387DC5 /* conv_spatial_helper.cl */ /* conv_spatial_helper.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = conv_spatial_helper.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/conv_spatial_helper.cl"; sourceTree = SOURCE_ROOT; };
+		1AD8C1BB4BFCF202ECD95F1C /* rapidxml_utils.hpp */ /* rapidxml_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rapidxml_utils.hpp; path = "../../Source/tiny-dnn-master/cereal/external/rapidxml/rapidxml_utils.hpp"; sourceTree = SOURCE_ROOT; };
+		1B9530C52DEC611254B98AD4 /* eight_bit_int_gemm.cc */ /* eight_bit_int_gemm.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = eight_bit_int_gemm.cc; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/eight_bit_int_gemm/eight_bit_int_gemm.cc"; sourceTree = SOURCE_ROOT; };
+		1C885EFC3D91E9DBC0580544 /* fully_connected_op.h */ /* fully_connected_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_op.h"; sourceTree = SOURCE_ROOT; };
+		1CA74F60BA8DD76146248C3C /* fixedpoint.h */ /* fixedpoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fixedpoint.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/fixedpoint.h"; sourceTree = SOURCE_ROOT; };
+		1D66D4D878F5AA8B40084355 /* Doxyfile */ /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = file; name = Doxyfile; path = "../../Source/tiny-dnn-master/docs/Doxyfile"; sourceTree = SOURCE_ROOT; };
+		1DC14FD01E41B8F8D629967E /* lrn.cl */ /* lrn.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = lrn.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/lrn.cl"; sourceTree = SOURCE_ROOT; };
+		1E09647BB50BF6A81C3663ED /* index.rst */ /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = file.rst; name = index.rst; path = "../../Source/tiny-dnn-master/docs/getting_started/index.rst"; sourceTree = SOURCE_ROOT; };
+		1EF717EFCF01BE56386C106A /* tiny_quantized_deconv2d_kernel.h */ /* tiny_quantized_deconv2d_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_quantized_deconv2d_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h"; sourceTree = SOURCE_ROOT; };
+		1F766264DCD91CC944D321E2 /* xoperation.hpp */ /* xoperation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xoperation.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xoperation.hpp"; sourceTree = SOURCE_ROOT; };
+		1FA9AE3768C7D0E45F82D457 /* rapidxml_iterators.hpp */ /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rapidxml_iterators.hpp; path = "../../Source/tiny-dnn-master/cereal/external/rapidxml/rapidxml_iterators.hpp"; sourceTree = SOURCE_ROOT; };
+		207BA80D477728F1244AFCEB /* xiterator.hpp */ /* xiterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xiterator.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xiterator.hpp"; sourceTree = SOURCE_ROOT; };
+		20E90F1FE05DD0FE3AB06265 /* BinaryData2.cpp */ /* BinaryData2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData2.cpp; path = ../../JuceLibraryCode/BinaryData2.cpp; sourceTree = SOURCE_ROOT; };
+		2148759F92F6EBC597623C8E /* xexception.hpp */ /* xexception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xexception.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xexception.hpp"; sourceTree = SOURCE_ROOT; };
+		21DD5D013566E7884479AF0D /* tiny_deconv2d_back_kernel.h */ /* tiny_deconv2d_back_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_deconv2d_back_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h"; sourceTree = SOURCE_ROOT; };
+		22AB0195E2804E7C122C9C6A /* tensor.h */ /* tensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tensor.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/tensor.h"; sourceTree = SOURCE_ROOT; };
+		2399782BDAF5FEAA51518F87 /* TinyDNN-logo-letters.png */ /* TinyDNN-logo-letters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TinyDNN-logo-letters.png"; path = "../../Source/tiny-dnn-master/docs/logo/TinyDNN-logo-letters.png"; sourceTree = SOURCE_ROOT; };
+		23F1DCCD4A6C3975FF8AE91B /* tanh_p1m2_layer.h */ /* tanh_p1m2_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tanh_p1m2_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/tanh_p1m2_layer.h"; sourceTree = SOURCE_ROOT; };
+		24343E2D8CA00885558F7AEC /* license.txt */ /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text.txt; name = license.txt; path = "../../Source/tiny-dnn-master/cereal/external/rapidxml/license.txt"; sourceTree = SOURCE_ROOT; };
+		24E2E518BAA44477E007FD41 /* asinh_layer.h */ /* asinh_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = asinh_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/asinh_layer.h"; sourceTree = SOURCE_ROOT; };
+		2546C596FCDB9BF700AE4FE8 /* program_manager.h */ /* program_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = program_manager.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/program_manager.h"; sourceTree = SOURCE_ROOT; };
+		26495A7B9D539DF1998549EB /* AUTHORS */ /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = file; name = AUTHORS; path = "../../Source/tiny-dnn-master/AUTHORS"; sourceTree = SOURCE_ROOT; };
+		26FACDF5D3CCD88F44D5B4F9 /* xbuilder.hpp */ /* xbuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xbuilder.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xbuilder.hpp"; sourceTree = SOURCE_ROOT; };
+		2704A97588B4325D6DDDD892 /* loss_function.h */ /* loss_function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = loss_function.h; path = "../../Source/tiny-dnn-master/tiny_dnn/lossfunctions/loss_function.h"; sourceTree = SOURCE_ROOT; };
+		274EE15A33D36FC2D0E246DF /* RecentFilesMenuTemplate.nib */ /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+		27D3AD3547AAAF503236D1F2 /* xtensor_config.hpp */ /* xtensor_config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xtensor_config.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xtensor_config.hpp"; sourceTree = SOURCE_ROOT; };
+		28043CDF65543A6AC68656F3 /* pointer.h */ /* pointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pointer.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/pointer.h"; sourceTree = SOURCE_ROOT; };
+		2904326CEDAF77CDF69159DA /* Gidolinya-Regular.otf */ /* Gidolinya-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file.otf; name = "Gidolinya-Regular.otf"; path = "../../Source/tiny-dnn-master/docs/logo/raw/GidoleFont/Gidolinya-Regular.otf"; sourceTree = SOURCE_ROOT; };
+		2A0A15647447A5FE30BC9F58 /* How-Tos.md */ /* How-Tos.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "How-Tos.md"; path = "../../Source/tiny-dnn-master/docs/how_tos/How-Tos.md"; sourceTree = SOURCE_ROOT; };
+		2ADDA582039FACAB612F0F3C /* nnp_deconv2d_kernel.h */ /* nnp_deconv2d_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nnp_deconv2d_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/nnp_deconv2d_kernel.h"; sourceTree = SOURCE_ROOT; };
+		2BAD38E857C8AEBCA82B2BFF /* conv_params.h */ /* conv_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/conv_params.h"; sourceTree = SOURCE_ROOT; };
+		2BB2A8141E1E4CF143C040B8 /* stb_image.h */ /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image.h; path = "../../Source/tiny-dnn-master/third_party/stb/stb_image.h"; sourceTree = SOURCE_ROOT; };
+		2C15FF181D63C3557EA0BE51 /* single_thread_gemm.h */ /* single_thread_gemm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = single_thread_gemm.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/single_thread_gemm.h"; sourceTree = SOURCE_ROOT; };
+		2C7DC129476A302B62B8BD9B /* TinyDNN-logo.png */ /* TinyDNN-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TinyDNN-logo.png"; path = "../../Source/tiny-dnn-master/docs/logo/TinyDNN-logo.png"; sourceTree = SOURCE_ROOT; };
+		2D30CD6BC77CEC506941CE81 /* slice_layer.h */ /* slice_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = slice_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/slice_layer.h"; sourceTree = SOURCE_ROOT; };
+		2E1C0235389AD7C084D0A10D /* partial_connected_layer.h */ /* partial_connected_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = partial_connected_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/partial_connected_layer.h"; sourceTree = SOURCE_ROOT; };
+		2E1DB2486C9986267D3BF793 /* parallel_for.h */ /* parallel_for.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = parallel_for.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/parallel_for.h"; sourceTree = SOURCE_ROOT; };
+		2E492583DE90F3FE98364815 /* gradient_check.h */ /* gradient_check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gradient_check.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/gradient_check.h"; sourceTree = SOURCE_ROOT; };
+		2F11C2F74921C819E6C1D924 /* common.hpp */ /* common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = common.hpp; path = "../../Source/tiny-dnn-master/cereal/types/common.hpp"; sourceTree = SOURCE_ROOT; };
+		2F30E9979DB46C8A64386E06 /* tiny_cnn.sln */ /* tiny_cnn.sln */ = {isa = PBXFileReference; lastKnownFileType = file.sln; name = tiny_cnn.sln; path = "../../Source/tiny-dnn-master/vc/vc14/tiny_cnn.sln"; sourceTree = SOURCE_ROOT; };
+		2F4DC21493CDE6704556D07F /* concat.cl */ /* concat.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = concat.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/concat.cl"; sourceTree = SOURCE_ROOT; };
+		2F5B26D0C9CB643B58CA0767 /* train-labels.idx1-ubyte */ /* train-labels.idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = "file.idx1-ubyte"; name = "train-labels.idx1-ubyte"; path = "../../Source/tiny-dnn-master/data/train-labels.idx1-ubyte"; sourceTree = SOURCE_ROOT; };
+		2FE7BD62112FB2AFD790EA6D /* adapters.hpp */ /* adapters.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = adapters.hpp; path = "../../Source/tiny-dnn-master/cereal/archives/adapters.hpp"; sourceTree = SOURCE_ROOT; };
+		2FF65B6425BA65557990DA21 /* strfunc.h */ /* strfunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strfunc.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/strfunc.h"; sourceTree = SOURCE_ROOT; };
+		30000C15F1CB7883F63C6EF5 /* xscalar.hpp */ /* xscalar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xscalar.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xscalar.hpp"; sourceTree = SOURCE_ROOT; };
+		30F1E1BCBD4CDCE052230C4C /* xeval.hpp */ /* xeval.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xeval.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xeval.hpp"; sourceTree = SOURCE_ROOT; };
+		31B66A7F31C9CA5E77514979 /* tiny_quantized_matmul_kernel.h */ /* tiny_quantized_matmul_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_quantized_matmul_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h"; sourceTree = SOURCE_ROOT; };
+		3354FA9BD4E6F880260F5330 /* tiny_quantization_kernel.h */ /* tiny_quantization_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_quantization_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_quantization_kernel.h"; sourceTree = SOURCE_ROOT; };
+		336CB187148D8773200D1D5D /* BinaryData.cpp */ /* BinaryData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData.cpp; path = ../../JuceLibraryCode/BinaryData.cpp; sourceTree = SOURCE_ROOT; };
+		349453D967A3732BAC996244 /* crop.cl */ /* crop.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = crop.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/crop.cl"; sourceTree = SOURCE_ROOT; };
+		35329C1139F70F07BF0C66D9 /* selu_layer.h */ /* selu_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = selu_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/selu_layer.h"; sourceTree = SOURCE_ROOT; };
+		35DA0EF358458B87C41990BC /* t10k-images.idx3-ubyte */ /* t10k-images.idx3-ubyte */ = {isa = PBXFileReference; lastKnownFileType = "file.idx3-ubyte"; name = "t10k-images.idx3-ubyte"; path = "../../Source/tiny-dnn-master/data/t10k-images.idx3-ubyte"; sourceTree = SOURCE_ROOT; };
+		365849404AE5AD0F4748206E /* nodes.h */ /* nodes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nodes.h; path = "../../Source/tiny-dnn-master/tiny_dnn/nodes.h"; sourceTree = SOURCE_ROOT; };
+		36DAC0CFB0DAAC62425C2143 /* global_avepool_op_avx.h */ /* global_avepool_op_avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global_avepool_op_avx.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/global_avepool_op_avx.h"; sourceTree = SOURCE_ROOT; };
+		37207C6CEC5A1AE27D8B7836 /* ostreamwrapper.h */ /* ostreamwrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ostreamwrapper.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/ostreamwrapper.h"; sourceTree = SOURCE_ROOT; };
+		375D9C5CA2658A594A2A6E40 /* inttypes.h */ /* inttypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = inttypes.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/msinttypes/inttypes.h"; sourceTree = SOURCE_ROOT; };
+		37F9C2BBADDA22929F4D9640 /* slice.cl */ /* slice.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = slice.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/slice.cl"; sourceTree = SOURCE_ROOT; };
+		397DA637B708579F9CE6266E /* xaxis_iterator.hpp */ /* xaxis_iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xaxis_iterator.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xaxis_iterator.hpp"; sourceTree = SOURCE_ROOT; };
+		39D223A1BE4C35897BAA95FD /* serialization_helper.h */ /* serialization_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serialization_helper.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/serialization_helper.h"; sourceTree = SOURCE_ROOT; };
+		39DA004A5C1777FEF1153AE9 /* prettywriter.h */ /* prettywriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = prettywriter.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/prettywriter.h"; sourceTree = SOURCE_ROOT; };
+		3A0EFDBD6967AFD81220352D /* string.hpp */ /* string.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = string.hpp; path = "../../Source/tiny-dnn-master/cereal/types/string.hpp"; sourceTree = SOURCE_ROOT; };
+		3B12FE7CEDFC98C10A241390 /* forward_list.hpp */ /* forward_list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = forward_list.hpp; path = "../../Source/tiny-dnn-master/cereal/types/forward_list.hpp"; sourceTree = SOURCE_ROOT; };
+		3B83EABC319ADD283A809ABB /* meta_arm_32.py */ /* meta_arm_32.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = meta_arm_32.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/meta_arm_32.py"; sourceTree = SOURCE_ROOT; };
+		3B89131911A6ED64B9EE6F91 /* stb_image_resize.h */ /* stb_image_resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image_resize.h; path = "../../Source/tiny-dnn-master/third_party/stb/stb_image_resize.h"; sourceTree = SOURCE_ROOT; };
+		3C95522D31FE362C25D39897 /* global_avepool_grad_op.h */ /* global_avepool_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global_avepool_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/global_avepool_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		3D2C2AE9C9B5756CC3E245A4 /* manual.html */ /* manual.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = manual.html; path = "../../Source/tiny-dnn-master/cereal/external/rapidxml/manual.html"; sourceTree = SOURCE_ROOT; };
+		3D9710E43A9BBF8A36B9F984 /* common.h */ /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = common.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/common.h"; sourceTree = SOURCE_ROOT; };
+		3F444E7F8B39E242259D8BF5 /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/matttwitchen/Desktop/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
+		3F601029036BEAA560D7B645 /* arithmetic_layer.h */ /* arithmetic_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = arithmetic_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/arithmetic_layer.h"; sourceTree = SOURCE_ROOT; };
+		41268D0FC70760F61D4C46B8 /* lstm_cell_op_internal.h */ /* lstm_cell_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lstm_cell_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/lstm_cell_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		43A7731EFA7EA2AB7DC68D57 /* conv2d_grad_op.h */ /* conv2d_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		443BDE539E095F9AE9774DE3 /* vector.hpp */ /* vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = vector.hpp; path = "../../Source/tiny-dnn-master/cereal/types/vector.hpp"; sourceTree = SOURCE_ROOT; };
+		46766259B7208EFA429F7F19 /* CMakeLists.txt */ /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text.txt; name = CMakeLists.txt; path = "../../Source/tiny-dnn-master/docs/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		4710C182B8D2F7A3FF3A9C79 /* boost_variant.hpp */ /* boost_variant.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = boost_variant.hpp; path = "../../Source/tiny-dnn-master/cereal/types/boost_variant.hpp"; sourceTree = SOURCE_ROOT; };
+		4777DA30A27C29219B2964D7 /* TinyDNN-logo-letters-alpha-version.svg */ /* TinyDNN-logo-letters-alpha-version.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; name = "TinyDNN-logo-letters-alpha-version.svg"; path = "../../Source/tiny-dnn-master/docs/logo/raw/TinyDNN-logo-letters-alpha-version.svg"; sourceTree = SOURCE_ROOT; };
+		4782CA994D2D1A2F0D453716 /* serialization_functions.h */ /* serialization_functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serialization_functions.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/serialization_functions.h"; sourceTree = SOURCE_ROOT; };
+		478644E070F6C7AE8E3A0409 /* op_kernel.h */ /* op_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = op_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/op_kernel.h"; sourceTree = SOURCE_ROOT; };
+		4969631C3A976EC7714666A4 /* polymorphic.hpp */ /* polymorphic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = polymorphic.hpp; path = "../../Source/tiny-dnn-master/cereal/types/polymorphic.hpp"; sourceTree = SOURCE_ROOT; };
+		49E887378BBF1B00D340B314 /* meta.h */ /* meta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = meta.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/meta.h"; sourceTree = SOURCE_ROOT; };
+		4A432D53835173DE072974B8 /* softmax_loss.cl */ /* softmax_loss.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = softmax_loss.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/softmax_loss.cl"; sourceTree = SOURCE_ROOT; };
+		4ACDB116796F2F6BC6AA6D8F /* conv2d_op_internal.h */ /* conv2d_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		4BDC5DE96D977177246347B9 /* fwd.h */ /* fwd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/fwd.h"; sourceTree = SOURCE_ROOT; };
+		4C74874BC10F9019CC26BCAF /* rapidxml.hpp */ /* rapidxml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rapidxml.hpp; path = "../../Source/tiny-dnn-master/cereal/external/rapidxml/rapidxml.hpp"; sourceTree = SOURCE_ROOT; };
+		4D2A056697E6D67930B03A0B /* readme.md */ /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = readme.md; path = "../../Source/tiny-dnn-master/docs/readme.md"; sourceTree = SOURCE_ROOT; };
+		4D54784C3D2A076428ADF5E7 /* meta_arm_64.py */ /* meta_arm_64.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = meta_arm_64.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/meta_arm_64.py"; sourceTree = SOURCE_ROOT; };
+		4D9E6D8D47C96CFC80B62265 /* batch_normalization_layer.h */ /* batch_normalization_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = batch_normalization_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/batch_normalization_layer.h"; sourceTree = SOURCE_ROOT; };
+		4E337BE21738557E00954B17 /* util.hpp */ /* util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = util.hpp; path = "../../Source/tiny-dnn-master/cereal/details/util.hpp"; sourceTree = SOURCE_ROOT; };
+		4F3DFC3AE5575D8248DFE615 /* TT_Filter.h */ /* TT_Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TT_Filter.h; path = ../../Source/TT_Filter.h; sourceTree = SOURCE_ROOT; };
+		4FB7CFC41ED1AADA75996610 /* nn_error.h */ /* nn_error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nn_error.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/nn_error.h"; sourceTree = SOURCE_ROOT; };
+		505369616A8BBF710EF2065F /* rnn_cell_params.h */ /* rnn_cell_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rnn_cell_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/rnn_cell_params.h"; sourceTree = SOURCE_ROOT; };
+		5166BB1F4B23A0E23F7CE746 /* gru_cell_op_internal.h */ /* gru_cell_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gru_cell_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/gru_cell_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		519A3ADA446041056C217300 /* Train-network-with-your-dataset.md */ /* Train-network-with-your-dataset.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "Train-network-with-your-dataset.md"; path = "../../Source/tiny-dnn-master/docs/how_tos/Train-network-with-your-dataset.md"; sourceTree = SOURCE_ROOT; };
+		51B821CAA69FC61178F61714 /* global_avepool_op_internal.h */ /* global_avepool_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global_avepool_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/global_avepool_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		51CF17F4FC4E078BDA5E14ED /* cifar10_parser.h */ /* cifar10_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cifar10_parser.h; path = "../../Source/tiny-dnn-master/tiny_dnn/io/cifar10_parser.h"; sourceTree = SOURCE_ROOT; };
+		51E4BF515728F1BF383AAE3A /* cpplint_test.sh */ /* cpplint_test.sh */ = {isa = PBXFileReference; lastKnownFileType = file.sh; name = cpplint_test.sh; path = "../../Source/tiny-dnn-master/scripts/cpplint_test.sh"; sourceTree = SOURCE_ROOT; };
+		52348B2C81DA02827717168C /* tiny_cnn.vcxproj */ /* tiny_cnn.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = file.vcxproj; name = tiny_cnn.vcxproj; path = "../../Source/tiny-dnn-master/vc/vc14/tiny_cnn.vcxproj"; sourceTree = SOURCE_ROOT; };
+		52B41D6687793BB0D0C8E153 /* product.h */ /* product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = product.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/product.h"; sourceTree = SOURCE_ROOT; };
+		52BEB2F69A65EFE0B4F8C431 /* TT_Filter.cpp */ /* TT_Filter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TT_Filter.cpp; path = ../../Source/TT_Filter.cpp; sourceTree = SOURCE_ROOT; };
+		52E81B3A2130370356814E22 /* math_functions.h */ /* math_functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = math_functions.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/math_functions.h"; sourceTree = SOURCE_ROOT; };
+		53662EA71FD149C6D3A4BC5D /* Readme-Characters.pdf */ /* Readme-Characters.pdf */ = {isa = PBXFileReference; lastKnownFileType = file.pdf; name = "Readme-Characters.pdf"; path = "../../Source/tiny-dnn-master/docs/logo/raw/GidoleFont/Readme-Characters.pdf"; sourceTree = SOURCE_ROOT; };
+		53E97075F396DC5F9570F315 /* input_layer.h */ /* input_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = input_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/input_layer.h"; sourceTree = SOURCE_ROOT; };
+		548BF9DBFC78450E30C09958 /* lrn_layer.h */ /* lrn_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lrn_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/lrn_layer.h"; sourceTree = SOURCE_ROOT; };
+		54C0B33FA1B2A3E4D72C3A0D /* unordered_map.hpp */ /* unordered_map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unordered_map.hpp; path = "../../Source/tiny-dnn-master/cereal/types/unordered_map.hpp"; sourceTree = SOURCE_ROOT; };
+		553D60DAF682351D96FE2163 /* maxpool_op_nnpack.h */ /* maxpool_op_nnpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = maxpool_op_nnpack.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/maxpool_op_nnpack.h"; sourceTree = SOURCE_ROOT; };
+		567C01C4CBF3C181BED712B5 /* multi_thread_gemm.h */ /* multi_thread_gemm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = multi_thread_gemm.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/multi_thread_gemm.h"; sourceTree = SOURCE_ROOT; };
+		569A713E0F3D25922D5C0701 /* tanh_layer.h */ /* tanh_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tanh_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/tanh_layer.h"; sourceTree = SOURCE_ROOT; };
+		569FB784BD254CA9661610C4 /* rnn_cell_op.h */ /* rnn_cell_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rnn_cell_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/rnn_cell_op.h"; sourceTree = SOURCE_ROOT; };
+		57359C963F40A1ACCBE33EF7 /* CMakeLists.txt */ /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text.txt; name = CMakeLists.txt; path = "../../Source/tiny-dnn-master/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		5740B9DDE4FEAC109BC11775 /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		581454345FB7C63D38F9298E /* index.rst */ /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = file.rst; name = index.rst; path = "../../Source/tiny-dnn-master/docs/layers/index.rst"; sourceTree = SOURCE_ROOT; };
+		5832C34640214ECFE413DB08 /* auxiliary.cl */ /* auxiliary.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = auxiliary.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/auxiliary.cl"; sourceTree = SOURCE_ROOT; };
+		58C276E9225A6DA632E76FBE /* diyfp.h */ /* diyfp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = diyfp.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/diyfp.h"; sourceTree = SOURCE_ROOT; };
+		599C8F03533AFA4E2BE408F0 /* BinaryData3.cpp */ /* BinaryData3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BinaryData3.cpp; path = ../../JuceLibraryCode/BinaryData3.cpp; sourceTree = SOURCE_ROOT; };
+		59A125A231BA8A69ABAA4B3D /* fillbuffer.cl */ /* fillbuffer.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = fillbuffer.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/fillbuffer.cl"; sourceTree = SOURCE_ROOT; };
+		59F99BED4CFB206DFD29D82D /* Doxyfile.in */ /* Doxyfile.in */ = {isa = PBXFileReference; lastKnownFileType = file.in; name = Doxyfile.in; path = "../../Source/tiny-dnn-master/docs/Doxyfile.in"; sourceTree = SOURCE_ROOT; };
+		5A4880BFE44F9303D1122D96 /* include_juce_events.mm */ /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		5AA2ABEB37ADB9E386C1365B /* recurrent_layer.h */ /* recurrent_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = recurrent_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/recurrent_layer.h"; sourceTree = SOURCE_ROOT; };
+		5AE64C7BDD95A63F2A1F951B /* fully_params.h */ /* fully_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/fully_params.h"; sourceTree = SOURCE_ROOT; };
+		5CF31238DA24C1900E4E9C86 /* multi_thread_gemm.h */ /* multi_thread_gemm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = multi_thread_gemm.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/multi_thread_gemm.h"; sourceTree = SOURCE_ROOT; };
+		5D40CC5CD02FE0F353A9C3DE /* gru_cell.h */ /* gru_cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gru_cell.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/gru_cell.h"; sourceTree = SOURCE_ROOT; };
+		5FAA0EBF356123840E1A2EEF /* gru_cell_params.h */ /* gru_cell_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gru_cell_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/gru_cell_params.h"; sourceTree = SOURCE_ROOT; };
+		602077B7C58CC3A428774D43 /* autodoc.py */ /* autodoc.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = autodoc.py; path = "../../Source/tiny-dnn-master/docs/autodoc.py"; sourceTree = SOURCE_ROOT; };
+		606F523BAD82380B1B7A93B2 /* juce_data_structures */ /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = /Users/matttwitchen/Desktop/JUCE/modules/juce_data_structures; sourceTree = "<absolute>"; };
+		607BF69631F80E7BF4B03345 /* program.h */ /* program.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = program.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/program.h"; sourceTree = SOURCE_ROOT; };
+		609578904D86EA5D28B8BCA6 /* gru_cell_op.h */ /* gru_cell_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gru_cell_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/gru_cell_op.h"; sourceTree = SOURCE_ROOT; };
+		6169D3C1511EF4B7FF4BAA15 /* avx_kernel_common.h */ /* avx_kernel_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avx_kernel_common.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/avx_kernel_common.h"; sourceTree = SOURCE_ROOT; };
+		62132DCF559E670A90AD8A37 /* neon_emitter.py */ /* neon_emitter.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = neon_emitter.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/neon_emitter.py"; sourceTree = SOURCE_ROOT; };
+		62666D85E3E96B084A70FBBA /* CPPLINT.cfg */ /* CPPLINT.cfg */ = {isa = PBXFileReference; lastKnownFileType = file.cfg; name = CPPLINT.cfg; path = "../../Source/tiny-dnn-master/tiny_dnn/io/caffe/CPPLINT.cfg"; sourceTree = SOURCE_ROOT; };
+		628FB537391A0C49455D15CD /* mul_1x8_Mx8_neon.py */ /* mul_1x8_Mx8_neon.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = mul_1x8_Mx8_neon.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/mul_1x8_Mx8_neon.py"; sourceTree = SOURCE_ROOT; };
+		62BA34B26AB845D6F56A8E54 /* TinyDNN-logo-letters-B-W.png */ /* TinyDNN-logo-letters-B-W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TinyDNN-logo-letters-B-W.png"; path = "../../Source/tiny-dnn-master/docs/logo/TinyDNN-logo-letters-B-W.png"; sourceTree = SOURCE_ROOT; };
+		62FEC5A860843A1D67F1C381 /* pow10.h */ /* pow10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pow10.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/pow10.h"; sourceTree = SOURCE_ROOT; };
+		64311CE3BFE392711FE24EF4 /* solvers.cl */ /* solvers.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = solvers.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/solvers.cl"; sourceTree = SOURCE_ROOT; };
+		6432E86CEE184BA059730BAC /* xutils.hpp */ /* xutils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xutils.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xutils.hpp"; sourceTree = SOURCE_ROOT; };
+		64BA1E8F72A654B3B2496242 /* softmax_layer.h */ /* softmax_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = softmax_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/softmax_layer.h"; sourceTree = SOURCE_ROOT; };
+		65546A1DA0850B6ADF4E0EB2 /* device.h */ /* device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = device.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/device.h"; sourceTree = SOURCE_ROOT; };
+		6685900DF6A5041F542C3361 /* encodedstream.h */ /* encodedstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = encodedstream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/encodedstream.h"; sourceTree = SOURCE_ROOT; };
+		669DC70E272FA17592B45DB2 /* dev-env.sh */ /* dev-env.sh */ = {isa = PBXFileReference; lastKnownFileType = file.sh; name = "dev-env.sh"; path = "../../Source/tiny-dnn-master/dev-env.sh"; sourceTree = SOURCE_ROOT; };
+		66D9257C054C1B66573D3EE8 /* strtod.h */ /* strtod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strtod.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/strtod.h"; sourceTree = SOURCE_ROOT; };
+		685A1CE818C3A28B9580956B /* Layers.md */ /* Layers.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = Layers.md; path = "../../Source/tiny-dnn-master/docs/layers/Layers.md"; sourceTree = SOURCE_ROOT; };
+		689B2EDBD37F6A54AF45962A /* TT_Formater.h */ /* TT_Formater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TT_Formater.h; path = ../../Source/TT_Formater.h; sourceTree = SOURCE_ROOT; };
+		68ED750E551016DC80CBC623 /* TinyDNN-logo-B-W.png */ /* TinyDNN-logo-B-W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TinyDNN-logo-B-W.png"; path = "../../Source/tiny-dnn-master/docs/logo/TinyDNN-logo-B-W.png"; sourceTree = SOURCE_ROOT; };
+		6912A9105F4AE536699939B8 /* avx_deconv2d_back_kernel.h */ /* avx_deconv2d_back_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avx_deconv2d_back_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h"; sourceTree = SOURCE_ROOT; };
+		693EF9B7A91ADA9435748197 /* deque.hpp */ /* deque.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = deque.hpp; path = "../../Source/tiny-dnn-master/cereal/types/deque.hpp"; sourceTree = SOURCE_ROOT; };
+		69E3E71F2899147FDD150104 /* Main.cpp */ /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../../Source/Main.cpp; sourceTree = SOURCE_ROOT; };
+		6A45794B4D74E9D668FAEFE9 /* cereal.hpp */ /* cereal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cereal.hpp; path = "../../Source/tiny-dnn-master/cereal/cereal.hpp"; sourceTree = SOURCE_ROOT; };
+		6AB3E039971E4376B4C0E0FF /* binary.hpp */ /* binary.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = binary.hpp; path = "../../Source/tiny-dnn-master/cereal/archives/binary.hpp"; sourceTree = SOURCE_ROOT; };
+		6B5E728ADB5236F29CCC97F1 /* stringbuffer.h */ /* stringbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stringbuffer.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/stringbuffer.h"; sourceTree = SOURCE_ROOT; };
+		6BA72A17A669DD7BE51BB7F7 /* softsign_layer.h */ /* softsign_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = softsign_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/softsign_layer.h"; sourceTree = SOURCE_ROOT; };
+		6C7E0FB0917277581C73DC70 /* xadapt.hpp */ /* xadapt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xadapt.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xadapt.hpp"; sourceTree = SOURCE_ROOT; };
+		6E6839FC7902057F618C06BD /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		6FBE9FC910FF93CCD064154B /* map.hpp */ /* map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = map.hpp; path = "../../Source/tiny-dnn-master/cereal/types/map.hpp"; sourceTree = SOURCE_ROOT; };
+		700660E22B6E14654EC7A486 /* conf.py */ /* conf.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = conf.py; path = "../../Source/tiny-dnn-master/docs/conf.py"; sourceTree = SOURCE_ROOT; };
+		7091342BF12CF6516D093EEA /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		71AAA338A444A2A4591E1FF9 /* optimizer.h */ /* optimizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = optimizer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/optimizers/optimizer.h"; sourceTree = SOURCE_ROOT; };
+		71D2231147F19897D8C774F7 /* deserialization_helper.h */ /* deserialization_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = deserialization_helper.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/deserialization_helper.h"; sourceTree = SOURCE_ROOT; };
+		7230EC3F6053B043FE9770F8 /* xtensor.hpp */ /* xtensor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xtensor.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xtensor.hpp"; sourceTree = SOURCE_ROOT; };
+		73BEB79365D37B76943EB078 /* itoa.h */ /* itoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = itoa.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/itoa.h"; sourceTree = SOURCE_ROOT; };
+		73FA92B522F633B5ADE37019 /* meta_arm_common.py */ /* meta_arm_common.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = meta_arm_common.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/meta_arm_common.py"; sourceTree = SOURCE_ROOT; };
+		74B67AF540C603C72ADB5706 /* helpers.hpp */ /* helpers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = helpers.hpp; path = "../../Source/tiny-dnn-master/cereal/details/helpers.hpp"; sourceTree = SOURCE_ROOT; };
+		74F5275C75EF2BE1630DB9CA /* single_thread_gemm_arm32.h */ /* single_thread_gemm_arm32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = single_thread_gemm_arm32.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/single_thread_gemm_arm32.h"; sourceTree = SOURCE_ROOT; };
+		76478E33D516DAB94AF662AF /* xindexview.hpp */ /* xindexview.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xindexview.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xindexview.hpp"; sourceTree = SOURCE_ROOT; };
+		767D534894B7A4AC176A516D /* output_stages.h */ /* output_stages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = output_stages.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/public/output_stages.h"; sourceTree = SOURCE_ROOT; };
+		7686EA083F6AA5F0E13DE5D6 /* cc_emitter.py */ /* cc_emitter.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = cc_emitter.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/cc_emitter.py"; sourceTree = SOURCE_ROOT; };
+		7696D459AC5F6485A61C8447 /* TT_Formater.cpp */ /* TT_Formater.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TT_Formater.cpp; path = ../../Source/TT_Formater.cpp; sourceTree = SOURCE_ROOT; };
+		77B4F0B52E73CA058FA5B6CF /* fully_connected_grad_op.h */ /* fully_connected_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		7863251902F5E63A63CFEA23 /* leaky_relu_layer.h */ /* leaky_relu_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = leaky_relu_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/leaky_relu_layer.h"; sourceTree = SOURCE_ROOT; };
+		78798950F142F0D760C1CD45 /* kernel_neon.h */ /* kernel_neon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = kernel_neon.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/kernel_neon.h"; sourceTree = SOURCE_ROOT; };
+		78996C50F4A10F981E7734C9 /* Gidole-Regular.ttf */ /* Gidole-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; name = "Gidole-Regular.ttf"; path = "../../Source/tiny-dnn-master/docs/logo/raw/GidoleFont/Gidole-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		78A8515849746DBD6DC43565 /* swap.h */ /* swap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = swap.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/swap.h"; sourceTree = SOURCE_ROOT; };
+		78D8964B023A604B651FCC11 /* average_pooling_layer.h */ /* average_pooling_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = average_pooling_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/average_pooling_layer.h"; sourceTree = SOURCE_ROOT; };
+		7A81B366FD84BA17EEC1EFC1 /* bias.cl */ /* bias.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = bias.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/bias.cl"; sourceTree = SOURCE_ROOT; };
+		7B7E925AAEAD95BFDCF94397 /* xrandom.hpp */ /* xrandom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xrandom.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xrandom.hpp"; sourceTree = SOURCE_ROOT; };
+		7C47762407D751EF19F11F19 /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = /Users/matttwitchen/Desktop/JUCE/modules/juce_core; sourceTree = "<absolute>"; };
+		7CD2C88F69EEE95F9BE319F1 /* xlayout.hpp */ /* xlayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xlayout.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xlayout.hpp"; sourceTree = SOURCE_ROOT; };
+		7E12A4D6A4052A794D1C7FDF /* rnn_cell_grad_op.h */ /* rnn_cell_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rnn_cell_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/rnn_cell_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		7E88BAB0F62FFA727F175710 /* pack_neon.h */ /* pack_neon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pack_neon.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/pack_neon.h"; sourceTree = SOURCE_ROOT; };
+		7EED5BADBB34D5D60AFC909C /* memory.hpp */ /* memory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = memory.hpp; path = "../../Source/tiny-dnn-master/cereal/types/memory.hpp"; sourceTree = SOURCE_ROOT; };
+		7EF4E8ECFF9F58A39EE369FE /* dropout.cl */ /* dropout.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = dropout.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/dropout.cl"; sourceTree = SOURCE_ROOT; };
+		7F19E218E5E7BAC0DEF9D318 /* quantized_convolutional_layer.h */ /* quantized_convolutional_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = quantized_convolutional_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/quantized_convolutional_layer.h"; sourceTree = SOURCE_ROOT; };
+		7FD8C1DD40C7E633F2AC029D /* reader.h */ /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = reader.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/reader.h"; sourceTree = SOURCE_ROOT; };
+		80527165EAB7026CAD09114D /* pack_SSE.h */ /* pack_SSE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pack_SSE.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/pack_SSE.h"; sourceTree = SOURCE_ROOT; };
+		80FD4545B8625379215A46DB /* conv2d_op_libdnn.h */ /* conv2d_op_libdnn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_op_libdnn.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_op_libdnn.h"; sourceTree = SOURCE_ROOT; };
+		81CEF5433521C24D0443AF4F /* xvectorize.hpp */ /* xvectorize.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xvectorize.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xvectorize.hpp"; sourceTree = SOURCE_ROOT; };
+		81D0C0DCCBF9C20BB246E783 /* encodings.h */ /* encodings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = encodings.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/encodings.h"; sourceTree = SOURCE_ROOT; };
+		820C4FAF7F09BAC9075C5C68 /* softplus_layer.h */ /* softplus_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = softplus_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/softplus_layer.h"; sourceTree = SOURCE_ROOT; };
+		827E56D7E00BB7BB55743C51 /* pooling.cl */ /* pooling.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = pooling.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/pooling.cl"; sourceTree = SOURCE_ROOT; };
+		83349A43AA2298AD7214037D /* set.hpp */ /* set.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = set.hpp; path = "../../Source/tiny-dnn-master/cereal/types/set.hpp"; sourceTree = SOURCE_ROOT; };
+		83B9C6B600CBB85CD976774F /* ieee754.h */ /* ieee754.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ieee754.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/ieee754.h"; sourceTree = SOURCE_ROOT; };
+		83CA66B32E9D2C4AB1417851 /* multi_thread_gemv.h */ /* multi_thread_gemv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = multi_thread_gemv.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/multi_thread_gemv.h"; sourceTree = SOURCE_ROOT; };
+		83DCBCB202C7169A9D998E9B /* nms.h */ /* nms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = nms.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/nms.h"; sourceTree = SOURCE_ROOT; };
+		83E611585FD8F9B0D08A5A9D /* LICENSE */ /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = file; name = LICENSE; path = "../../Source/tiny-dnn-master/LICENSE"; sourceTree = SOURCE_ROOT; };
+		841E53D51D69F062CA0AC84A /* fft.cl */ /* fft.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = fft.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/fft.cl"; sourceTree = SOURCE_ROOT; };
+		847A7ED68C1601AF3E1234A3 /* single_thread_gemm_arm64.h */ /* single_thread_gemm_arm64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = single_thread_gemm_arm64.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/single_thread_gemm_arm64.h"; sourceTree = SOURCE_ROOT; };
+		84BF5F4C80EB44C3969DF93E /* conv2d_op_nnpack.h */ /* conv2d_op_nnpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_op_nnpack.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_op_nnpack.h"; sourceTree = SOURCE_ROOT; };
+		8517D0F1B443C87CB1DA3F7B /* queue.hpp */ /* queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = queue.hpp; path = "../../Source/tiny-dnn-master/cereal/types/queue.hpp"; sourceTree = SOURCE_ROOT; };
+		854841C708623A9B7173C265 /* index.rst */ /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = file.rst; name = index.rst; path = "../../Source/tiny-dnn-master/docs/index.rst"; sourceTree = SOURCE_ROOT; };
+		854FAF3884F1EC34A92CDB93 /* clang-format.sh */ /* clang-format.sh */ = {isa = PBXFileReference; lastKnownFileType = file.sh; name = "clang-format.sh"; path = "../../Source/tiny-dnn-master/scripts/clang-format.sh"; sourceTree = SOURCE_ROOT; };
+		85F3D067E93FC04FB683D51D /* deconv_params.h */ /* deconv_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = deconv_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/deconv_params.h"; sourceTree = SOURCE_ROOT; };
+		85FB37CFFEE1E0BDCF3D5BA2 /* tiny_deconv2d_kernel.h */ /* tiny_deconv2d_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_deconv2d_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h"; sourceTree = SOURCE_ROOT; };
+		867C4C6F22EFCC90FD93B175 /* random.h */ /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = random.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/random.h"; sourceTree = SOURCE_ROOT; };
+		891E21D5E008FAB7CAE1CA28 /* neon_emitter_64.py */ /* neon_emitter_64.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = neon_emitter_64.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/neon_emitter_64.py"; sourceTree = SOURCE_ROOT; };
+		8946AF68635BC72437EA175C /* document.h */ /* document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = document.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/document.h"; sourceTree = SOURCE_ROOT; };
+		8990560AA8B1985D4C473CA7 /* index.rst */ /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = file.rst; name = index.rst; path = "../../Source/tiny-dnn-master/docs/update_log/index.rst"; sourceTree = SOURCE_ROOT; };
+		899EC8BCAD58583F183CD908 /* array.hpp */ /* array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = array.hpp; path = "../../Source/tiny-dnn-master/cereal/types/array.hpp"; sourceTree = SOURCE_ROOT; };
+		89E11B16E446F612D038AC66 /* xnoalias.hpp */ /* xnoalias.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xnoalias.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xnoalias.hpp"; sourceTree = SOURCE_ROOT; };
+		8A4B3C7FD6B7AB513BF69889 /* xoptional.hpp */ /* xoptional.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xoptional.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xoptional.hpp"; sourceTree = SOURCE_ROOT; };
+		8B297A9DB8D433145BAB92F4 /* xcsv.hpp */ /* xcsv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcsv.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xcsv.hpp"; sourceTree = SOURCE_ROOT; };
+		8BE404BB3C6C89FC57CF2580 /* contrastive_loss.cl */ /* contrastive_loss.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = contrastive_loss.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/contrastive_loss.cl"; sourceTree = SOURCE_ROOT; };
+		8D051FFD3E671AE70974158D /* map.h */ /* map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = map.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/public/map.h"; sourceTree = SOURCE_ROOT; };
+		8F34EC81477C8B05BADE6FE6 /* BinaryData.h */ /* BinaryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryData.h; path = ../../JuceLibraryCode/BinaryData.h; sourceTree = SOURCE_ROOT; };
+		8F59960082C942AA1055DECE /* schema.h */ /* schema.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = schema.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/schema.h"; sourceTree = SOURCE_ROOT; };
+		8F5C4E09914269A0D96DA6FE /* maxpool_op.h */ /* maxpool_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = maxpool_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/maxpool_op.h"; sourceTree = SOURCE_ROOT; };
+		8F5C7E3C1125BDBFD3DCD054 /* im2col_nd.cl */ /* im2col_nd.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = im2col_nd.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/im2col_nd.cl"; sourceTree = SOURCE_ROOT; };
+		8FF0BB30E13795009898F1A6 /* chrono.hpp */ /* chrono.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = chrono.hpp; path = "../../Source/tiny-dnn-master/cereal/types/chrono.hpp"; sourceTree = SOURCE_ROOT; };
+		91968C6EEB659CF049731C22 /* colored_print.h */ /* colored_print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = colored_print.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/colored_print.h"; sourceTree = SOURCE_ROOT; };
+		923E2AD5B9125C7B523B3A33 /* maxpool_params.h */ /* maxpool_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = maxpool_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/maxpool_params.h"; sourceTree = SOURCE_ROOT; };
+		947535F771B657CDFE4788BB /* serialization_layer_list.h */ /* serialization_layer_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = serialization_layer_list.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/serialization_layer_list.h"; sourceTree = SOURCE_ROOT; };
+		94D84617760A28DFFE7DE2D8 /* math.cl */ /* math.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = math.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/math.cl"; sourceTree = SOURCE_ROOT; };
+		95A0BCEF31E9978BBF571CCB /* Writing-Custom-Activations.md */ /* Writing-Custom-Activations.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "Writing-Custom-Activations.md"; path = "../../Source/tiny-dnn-master/docs/developer_guides/Writing-Custom-Activations.md"; sourceTree = SOURCE_ROOT; };
+		95EFAF170619C44F4DB131CF /* complex.hpp */ /* complex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = complex.hpp; path = "../../Source/tiny-dnn-master/cereal/types/complex.hpp"; sourceTree = SOURCE_ROOT; };
+		967E7EB96B821D02F97C87E0 /* stack.h */ /* stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/stack.h"; sourceTree = SOURCE_ROOT; };
+		96C1AEEDF9E65E8870054935 /* sigmoid_layer.h */ /* sigmoid_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sigmoid_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/sigmoid_layer.h"; sourceTree = SOURCE_ROOT; };
+		97F612088771A746C0D84386 /* TT_Synthesiser.cpp */ /* TT_Synthesiser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TT_Synthesiser.cpp; path = ../../Source/TT_Synthesiser.cpp; sourceTree = SOURCE_ROOT; };
+		98523E6E8626188ACAF3A6B3 /* quantized_fully_connected_layer.h */ /* quantized_fully_connected_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = quantized_fully_connected_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/quantized_fully_connected_layer.h"; sourceTree = SOURCE_ROOT; };
+		99D57DF00A789A7C2CE43418 /* rapidxml_print.hpp */ /* rapidxml_print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rapidxml_print.hpp; path = "../../Source/tiny-dnn-master/cereal/external/rapidxml/rapidxml_print.hpp"; sourceTree = SOURCE_ROOT; };
+		99E6A828B59B79E942BAE145 /* regex.h */ /* regex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = regex.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/regex.h"; sourceTree = SOURCE_ROOT; };
+		9A0E66CF636BCA368DE3BD86 /* tiny_dnn.h */ /* tiny_dnn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_dnn.h; path = "../../Source/tiny-dnn-master/tiny_dnn/tiny_dnn.h"; sourceTree = SOURCE_ROOT; };
+		9BA07DA17FD944DB2E857AE8 /* node.h */ /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = node.h; path = "../../Source/tiny-dnn-master/tiny_dnn/node.h"; sourceTree = SOURCE_ROOT; };
+		9C71FD93908EDB16516B8A8D /* TinyDNN-logo-letters-B-W.svg */ /* TinyDNN-logo-letters-B-W.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; name = "TinyDNN-logo-letters-B-W.svg"; path = "../../Source/tiny-dnn-master/docs/logo/raw/TinyDNN-logo-letters-B-W.svg"; sourceTree = SOURCE_ROOT; };
+		9D3E4268828AE7EEBB094006 /* gemmlowp.h */ /* gemmlowp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = gemmlowp.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/public/gemmlowp.h"; sourceTree = SOURCE_ROOT; };
+		9D7B6A922820542C95948229 /* polymorphic_impl.hpp */ /* polymorphic_impl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = polymorphic_impl.hpp; path = "../../Source/tiny-dnn-master/cereal/details/polymorphic_impl.hpp"; sourceTree = SOURCE_ROOT; };
+		9E9B02C3D3D7C14D7DE6BA19 /* stack.hpp */ /* stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stack.hpp; path = "../../Source/tiny-dnn-master/cereal/types/stack.hpp"; sourceTree = SOURCE_ROOT; };
+		9F69F0D3E2DB5CE874AC49ED /* en.h */ /* en.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/error/en.h"; sourceTree = SOURCE_ROOT; };
+		9FF4E5486A3256C63E943DFB /* dropout_layer.h */ /* dropout_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dropout_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/dropout_layer.h"; sourceTree = SOURCE_ROOT; };
+		A0FCB8A1CF08011CF8736DD2 /* activation_layer.h */ /* activation_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = activation_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/activation_layer.h"; sourceTree = SOURCE_ROOT; };
+		A135EF9F73C64D2981490BB9 /* rnn_cell_op_internal.h */ /* rnn_cell_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rnn_cell_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/rnn_cell_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		A324233992B3586509F2930F /* maxpool_op_avx.h */ /* maxpool_op_avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = maxpool_op_avx.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/maxpool_op_avx.h"; sourceTree = SOURCE_ROOT; };
+		A32F2DEE0ADC11EF557C3E9B /* base64.hpp */ /* base64.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base64.hpp; path = "../../Source/tiny-dnn-master/cereal/external/base64.hpp"; sourceTree = SOURCE_ROOT; };
+		A35F01E0DE152E661F76C02D /* istreamwrapper.h */ /* istreamwrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = istreamwrapper.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/istreamwrapper.h"; sourceTree = SOURCE_ROOT; };
+		A37AAA86A29DA6BB298873EE /* run_lints.sh */ /* run_lints.sh */ = {isa = PBXFileReference; lastKnownFileType = file.sh; name = run_lints.sh; path = "../../Source/tiny-dnn-master/scripts/run_lints.sh"; sourceTree = SOURCE_ROOT; };
+		A50CC084E5A5FEAD26B1B06B /* tiny_cnn.vcxproj.filters */ /* tiny_cnn.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = file.filters; name = tiny_cnn.vcxproj.filters; path = "../../Source/tiny-dnn-master/vc/vc14/tiny_cnn.vcxproj.filters"; sourceTree = SOURCE_ROOT; };
+		A57D1E01EAD6A4DBC37E9EC5 /* layer_factory_impl.h */ /* layer_factory_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = layer_factory_impl.h; path = "../../Source/tiny-dnn-master/tiny_dnn/io/caffe/layer_factory_impl.h"; sourceTree = SOURCE_ROOT; };
+		A700E19ACC0E588021E71159 /* caffe.proto */ /* caffe.proto */ = {isa = PBXFileReference; lastKnownFileType = file.proto; name = caffe.proto; path = "../../Source/tiny-dnn-master/tiny_dnn/io/caffe/caffe.proto"; sourceTree = SOURCE_ROOT; };
+		A789AAD046B7A377285D5E27 /* eltwise.cl */ /* eltwise.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = eltwise.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/eltwise.cl"; sourceTree = SOURCE_ROOT; };
+		A87850FB4F75633C047586CF /* xbroadcast.hpp */ /* xbroadcast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xbroadcast.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xbroadcast.hpp"; sourceTree = SOURCE_ROOT; };
+		A89983B59B9F0251554B8631 /* xmissing.hpp */ /* xmissing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xmissing.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xmissing.hpp"; sourceTree = SOURCE_ROOT; };
+		A89FBA513EAD2ACDFE706BCF /* relu_layer.h */ /* relu_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = relu_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/activations/relu_layer.h"; sourceTree = SOURCE_ROOT; };
+		A8A01B085AACECCCC615A770 /* fully_connected_op_nnpack.h */ /* fully_connected_op_nnpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_op_nnpack.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_op_nnpack.h"; sourceTree = SOURCE_ROOT; };
+		A8DDD8691F091184BA5BCB45 /* gemv_1xMxK.py */ /* gemv_1xMxK.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = gemv_1xMxK.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/gemv_1xMxK.py"; sourceTree = SOURCE_ROOT; };
+		A9B050DD4A975717A54CC99C /* kernel_reference.h */ /* kernel_reference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = kernel_reference.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/kernel_reference.h"; sourceTree = SOURCE_ROOT; };
+		A9D015534548110A7E6F816E /* unordered_set.hpp */ /* unordered_set.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unordered_set.hpp; path = "../../Source/tiny-dnn-master/cereal/types/unordered_set.hpp"; sourceTree = SOURCE_ROOT; };
+		A9E63280077F0428AE66A9E6 /* operations_common.h */ /* operations_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = operations_common.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/operations_common.h"; sourceTree = SOURCE_ROOT; };
+		A9FAB8D1A3D022D4AD53D444 /* TinyDNN-logo-letters.svg */ /* TinyDNN-logo-letters.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; name = "TinyDNN-logo-letters.svg"; path = "../../Source/tiny-dnn-master/docs/logo/raw/TinyDNN-logo-letters.svg"; sourceTree = SOURCE_ROOT; };
+		AA0F33824810F57F0CD8C439 /* reference_gemm.h */ /* reference_gemm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = reference_gemm.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/public/reference_gemm.h"; sourceTree = SOURCE_ROOT; };
+		AB27A809147574DD482E96C6 /* TT_Synthesiser.h */ /* TT_Synthesiser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TT_Synthesiser.h; path = ../../Source/TT_Synthesiser.h; sourceTree = SOURCE_ROOT; };
+		AB4D51A465D8A5A35CC0D07A /* TinyDNN-logo-B-W.svg */ /* TinyDNN-logo-B-W.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; name = "TinyDNN-logo-B-W.svg"; path = "../../Source/tiny-dnn-master/docs/logo/raw/TinyDNN-logo-B-W.svg"; sourceTree = SOURCE_ROOT; };
+		ABE18DB8098A40BA444441B3 /* lstm_unit.cl */ /* lstm_unit.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = lstm_unit.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/lstm_unit.cl"; sourceTree = SOURCE_ROOT; };
+		AC8BCD4E77A1BE29127D231C /* Integrate-with-your-application.md */ /* Integrate-with-your-application.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "Integrate-with-your-application.md"; path = "../../Source/tiny-dnn-master/docs/how_tos/Integrate-with-your-application.md"; sourceTree = SOURCE_ROOT; };
+		ACABD430A4FBE063ADFB7271 /* conv2d_op_avx.h */ /* conv2d_op_avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_op_avx.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_op_avx.h"; sourceTree = SOURCE_ROOT; };
+		AE05F92DEA9C54BA0194EF3C /* pack.h */ /* pack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pack.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/pack.h"; sourceTree = SOURCE_ROOT; };
+		AEEB2023AD9121C862955F82 /* cpplint.py */ /* cpplint.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = cpplint.py; path = "../../Source/tiny-dnn-master/third_party/cpplint.py"; sourceTree = SOURCE_ROOT; };
+		AF02E0AE6E6C4D16E2DE10A5 /* graph.gif */ /* graph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = graph.gif; path = "../../Source/tiny-dnn-master/docs/resource/graph.gif"; sourceTree = SOURCE_ROOT; };
+		AF8155AC8A3BCA390AB100ED /* cupp11.h */ /* cupp11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cupp11.h; path = "../../Source/tiny-dnn-master/third_party/CLCudaAPI/cupp11.h"; sourceTree = SOURCE_ROOT; };
+		AFF6A0F81E90DB368CF0A535 /* tile.cl */ /* tile.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = tile.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/tile.cl"; sourceTree = SOURCE_ROOT; };
+		B05DD79E3309F2A6DF779208 /* xsemantic.hpp */ /* xsemantic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xsemantic.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xsemantic.hpp"; sourceTree = SOURCE_ROOT; };
+		B08161E8D35D727213BBCB65 /* tiny_quantized_conv2d_kernel.h */ /* tiny_quantized_conv2d_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_quantized_conv2d_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h"; sourceTree = SOURCE_ROOT; };
+		B0A269C07EBC956CEE3B4CF3 /* polymorphic_impl_fwd.hpp */ /* polymorphic_impl_fwd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = polymorphic_impl_fwd.hpp; path = "../../Source/tiny-dnn-master/cereal/details/polymorphic_impl_fwd.hpp"; sourceTree = SOURCE_ROOT; };
+		B18EF93C08DD50ACB533D2EF /* TT_Cutoff.h */ /* TT_Cutoff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TT_Cutoff.h; path = ../../Source/TT_Cutoff.h; sourceTree = SOURCE_ROOT; };
+		B1A1A887AC1B48BC81ACB1F4 /* fully_connected_op_cblas.h */ /* fully_connected_op_cblas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_op_cblas.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_op_cblas.h"; sourceTree = SOURCE_ROOT; };
+		B2E1297420048F37528766D5 /* l2_normalization_layer.h */ /* l2_normalization_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = l2_normalization_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/l2_normalization_layer.h"; sourceTree = SOURCE_ROOT; };
+		B308916C72E866D33F81663C /* Getting-started.md */ /* Getting-started.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "Getting-started.md"; path = "../../Source/tiny-dnn-master/docs/getting_started/Getting-started.md"; sourceTree = SOURCE_ROOT; };
+		B327C78D533154EC2FFFA708 /* list.hpp */ /* list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = list.hpp; path = "../../Source/tiny-dnn-master/cereal/types/list.hpp"; sourceTree = SOURCE_ROOT; };
+		B3DF35F8911ACB81A59C2038 /* fixedpoint_neon.h */ /* fixedpoint_neon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fixedpoint_neon.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/fixedpoint_neon.h"; sourceTree = SOURCE_ROOT; };
+		B3F37B9524516A4DDC1863F1 /* global_average_pooling_layer.h */ /* global_average_pooling_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global_average_pooling_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/global_average_pooling_layer.h"; sourceTree = SOURCE_ROOT; };
+		B4C104FFCE7F7D3447DFFC51 /* kernel.h */ /* kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = kernel.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/kernel.h"; sourceTree = SOURCE_ROOT; };
+		B4E4BCC9E9E9E06822C3BD5A /* network.h */ /* network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = network.h; path = "../../Source/tiny-dnn-master/tiny_dnn/network.h"; sourceTree = SOURCE_ROOT; };
+		B51F037C94EF28D1B3DF19C3 /* Makefile */ /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = file; name = Makefile; path = "../../Source/tiny-dnn-master/docs/Makefile"; sourceTree = SOURCE_ROOT; };
+		B5B2CD126A3CE0313BC90476 /* xinfo.hpp */ /* xinfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xinfo.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xinfo.hpp"; sourceTree = SOURCE_ROOT; };
+		B5C22889F1561A8ED2CC657F /* global_avepool_params.h */ /* global_avepool_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global_avepool_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/global_avepool_params.h"; sourceTree = SOURCE_ROOT; };
+		B63324FF9B2C5A3D5D5E0A21 /* TinyDNN-logo-letters-EDITABLE-LETTERS.svg */ /* TinyDNN-logo-letters-EDITABLE-LETTERS.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; name = "TinyDNN-logo-letters-EDITABLE-LETTERS.svg"; path = "../../Source/tiny-dnn-master/docs/logo/raw/TinyDNN-logo-letters-EDITABLE-LETTERS.svg"; sourceTree = SOURCE_ROOT; };
+		B6D99A7A2C8402B772F37169 /* single_thread_gemm.h */ /* single_thread_gemm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = single_thread_gemm.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/single_thread_gemm.h"; sourceTree = SOURCE_ROOT; };
+		B6DF4DF3AD4E421EB6FB6EEE /* max_pooling_layer.h */ /* max_pooling_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = max_pooling_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/max_pooling_layer.h"; sourceTree = SOURCE_ROOT; };
+		B6E4B06A35FB722699C4BF1E /* xml.hpp */ /* xml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xml.hpp; path = "../../Source/tiny-dnn-master/cereal/archives/xml.hpp"; sourceTree = SOURCE_ROOT; };
+		B6E8825FC334F2F93E4CA3BD /* lstm_cell_grad_op.h */ /* lstm_cell_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lstm_cell_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/lstm_cell_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		B7375938DEB93BB776BFBB55 /* xexpression.hpp */ /* xexpression.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xexpression.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xexpression.hpp"; sourceTree = SOURCE_ROOT; };
+		B7DCA1EB8FD9C58BA86BF7CB /* quantized_deconvolutional_layer.h */ /* quantized_deconvolutional_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = quantized_deconvolutional_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/quantized_deconvolutional_layer.h"; sourceTree = SOURCE_ROOT; };
+		B820D1FDD3C2CEB551183E77 /* license.txt */ /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text.txt; name = license.txt; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/license.txt"; sourceTree = SOURCE_ROOT; };
+		B883C7164718BAD9AEA0FEF1 /* utility.hpp */ /* utility.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = utility.hpp; path = "../../Source/tiny-dnn-master/cereal/types/utility.hpp"; sourceTree = SOURCE_ROOT; };
+		B88A069A9A367479315AE480 /* activation.cl */ /* activation.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = activation.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/activation.cl"; sourceTree = SOURCE_ROOT; };
+		B8D5850F115892759E415C6A /* xslice.hpp */ /* xslice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xslice.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xslice.hpp"; sourceTree = SOURCE_ROOT; };
+		B908039577DBF24EAAD756D4 /* unpack.h */ /* unpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = unpack.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/unpack.h"; sourceTree = SOURCE_ROOT; };
+		B98F9CF9F3E148BF8246C94C /* conv2d_op_opencl.h */ /* conv2d_op_opencl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_op_opencl.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_op_opencl.h"; sourceTree = SOURCE_ROOT; };
+		B9C2302D38710D6AE0BCB197 /* xgenerator.hpp */ /* xgenerator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xgenerator.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xgenerator.hpp"; sourceTree = SOURCE_ROOT; };
+		B9DDB6557CDBF66F2CE85490 /* config.h */ /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = "../../Source/tiny-dnn-master/tiny_dnn/config.h"; sourceTree = SOURCE_ROOT; };
+		BA860040FE7AC92A14FECA68 /* writer.h */ /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = writer.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/writer.h"; sourceTree = SOURCE_ROOT; };
+		BB2AE4B507A2802097E4FC6E /* macros.hpp */ /* macros.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = macros.hpp; path = "../../Source/tiny-dnn-master/cereal/macros.hpp"; sourceTree = SOURCE_ROOT; };
+		BBBEA9913819EEEA7AB289CD /* deform.h */ /* deform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = deform.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/deform.h"; sourceTree = SOURCE_ROOT; };
+		BCE0A9CCDD98D89720310506 /* rnn_cell.h */ /* rnn_cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = rnn_cell.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/rnn_cell.h"; sourceTree = SOURCE_ROOT; };
+		BD080E968308714A445A9694 /* alexnet.h */ /* alexnet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = alexnet.h; path = "../../Source/tiny-dnn-master/tiny_dnn/models/alexnet.h"; sourceTree = SOURCE_ROOT; };
+		BD3A93A3884E4778C0E947B3 /* zero_pad_layer.h */ /* zero_pad_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = zero_pad_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/zero_pad_layer.h"; sourceTree = SOURCE_ROOT; };
+		BEEA5A7C50EF9B01052DB9B1 /* util.h */ /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = util.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/util.h"; sourceTree = SOURCE_ROOT; };
+		C0423AA9DCF46A56B3E7A741 /* conv2d_op.h */ /* conv2d_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = conv2d_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/conv2d_op.h"; sourceTree = SOURCE_ROOT; };
+		C079F309A4BC34CCE7B3C2EA /* lstm_cell_params.h */ /* lstm_cell_params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lstm_cell_params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/lstm_cell_params.h"; sourceTree = SOURCE_ROOT; };
+		C172357F6549746FEBBD2A76 /* 2952-0039-1819-5325 */ /* 2952-0039-1819-5325 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "2952-0039-1819-5325"; path = "../../Source/tiny-dnn-master/vc/vc14/2952-0039-1819-5325"; sourceTree = SOURCE_ROOT; };
+		C182243F74072F1EB6E3FC42 /* mnist_parser.h */ /* mnist_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mnist_parser.h; path = "../../Source/tiny-dnn-master/tiny_dnn/io/mnist_parser.h"; sourceTree = SOURCE_ROOT; };
+		C1B14A78ED869B07F36A6B99 /* gemm_MxNxK.py */ /* gemm_MxNxK.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = gemm_MxNxK.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/gemm_MxNxK.py"; sourceTree = SOURCE_ROOT; };
+		C237D83639B796F0B6184BDD /* appveyor.yml */ /* appveyor.yml */ = {isa = PBXFileReference; lastKnownFileType = file.yml; name = appveyor.yml; path = "../../Source/tiny-dnn-master/appveyor.yml"; sourceTree = SOURCE_ROOT; };
+		C28C42A893664825E912B9A6 /* static_object.hpp */ /* static_object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = static_object.hpp; path = "../../Source/tiny-dnn-master/cereal/details/static_object.hpp"; sourceTree = SOURCE_ROOT; };
+		C2DFEEF0A65E9981312E5B8B /* weight_init.h */ /* weight_init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = weight_init.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/weight_init.h"; sourceTree = SOURCE_ROOT; };
+		C3D60BFB95A1EBF9BFD67128 /* memorybuffer.h */ /* memorybuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = memorybuffer.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/memorybuffer.h"; sourceTree = SOURCE_ROOT; };
+		C407A361664222AB3B951699 /* update-authors.sh */ /* update-authors.sh */ = {isa = PBXFileReference; lastKnownFileType = file.sh; name = "update-authors.sh"; path = "../../Source/tiny-dnn-master/scripts/update-authors.sh"; sourceTree = SOURCE_ROOT; };
+		C44FA7D956FA148AFBA9213D /* TinyDNN-logo.svg */ /* TinyDNN-logo.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; name = "TinyDNN-logo.svg"; path = "../../Source/tiny-dnn-master/docs/logo/raw/TinyDNN-logo.svg"; sourceTree = SOURCE_ROOT; };
+		C48FB0D354C072398C56691B /* iterator.h */ /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/iterator.h"; sourceTree = SOURCE_ROOT; };
+		C5D4EC155FF05C97B2BCB1D8 /* cell.h */ /* cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cell.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/cell.h"; sourceTree = SOURCE_ROOT; };
+		C6B805D13645A893DF93594E /* elu.cl */ /* elu.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = elu.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/elu.cl"; sourceTree = SOURCE_ROOT; };
+		C713B63D8555098344A8732E /* convolutional_layer.h */ /* convolutional_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = convolutional_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/convolutional_layer.h"; sourceTree = SOURCE_ROOT; };
+		C8360AF814392E23764669A6 /* License.txt */ /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text.txt; name = License.txt; path = "../../Source/tiny-dnn-master/docs/logo/raw/GidoleFont/License.txt"; sourceTree = SOURCE_ROOT; };
+		C85D7291B825763D51A5AFD0 /* profiler.h */ /* profiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = profiler.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/profiling/profiler.h"; sourceTree = SOURCE_ROOT; };
+		C86019749450608A6EFEB205 /* xreducer.hpp */ /* xreducer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xreducer.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xreducer.hpp"; sourceTree = SOURCE_ROOT; };
+		C86BE7AD50DAF865A20CCE29 /* tuple.hpp */ /* tuple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tuple.hpp; path = "../../Source/tiny-dnn-master/cereal/types/tuple.hpp"; sourceTree = SOURCE_ROOT; };
+		CA0DDE77A58CCDAEC0A04880 /* meta.py */ /* meta.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = meta.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/meta.py"; sourceTree = SOURCE_ROOT; };
+		CA15C5EDDA67397D674A6FC0 /* bit_depth.h */ /* bit_depth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = bit_depth.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/public/bit_depth.h"; sourceTree = SOURCE_ROOT; };
+		CAC9056EA770E477CD058805 /* clpp11.h */ /* clpp11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = clpp11.h; path = "../../Source/tiny-dnn-master/third_party/CLCudaAPI/clpp11.h"; sourceTree = SOURCE_ROOT; };
+		CB53C7B0487A51BAB886A26F /* filestream.h */ /* filestream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = filestream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/filestream.h"; sourceTree = SOURCE_ROOT; };
+		CC809B997B59AE5717DC609B /* instrumentation.h */ /* instrumentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = instrumentation.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/profiling/instrumentation.h"; sourceTree = SOURCE_ROOT; };
+		CD08F0CB7D404A713720A130 /* fully_connected_op_intel_mkl.h */ /* fully_connected_op_intel_mkl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_op_intel_mkl.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_op_intel_mkl.h"; sourceTree = SOURCE_ROOT; };
+		CD1281CE9F810D30758FF618 /* xbuffer_adaptor.hpp */ /* xbuffer_adaptor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xbuffer_adaptor.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xbuffer_adaptor.hpp"; sourceTree = SOURCE_ROOT; };
+		CDD089B61A6CE4883ADD7B62 /* fully_connected_op_internal.h */ /* fully_connected_op_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fully_connected_op_internal.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/fully_connected_op_internal.h"; sourceTree = SOURCE_ROOT; };
+		CEE9839D1AC1ACA47ACD5E72 /* aligned_allocator.h */ /* aligned_allocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aligned_allocator.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/aligned_allocator.h"; sourceTree = SOURCE_ROOT; };
+		CF273706F36E10C38256E051 /* traits.hpp */ /* traits.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = traits.hpp; path = "../../Source/tiny-dnn-master/cereal/details/traits.hpp"; sourceTree = SOURCE_ROOT; };
+		CF80704C369E510B0F713BE5 /* v0_0_1-to-v0_1_0.md */ /* v0_0_1-to-v0_1_0.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "v0_0_1-to-v0_1_0.md"; path = "../../Source/tiny-dnn-master/docs/update_log/v0_0_1-to-v0_1_0.md"; sourceTree = SOURCE_ROOT; };
+		CFA2D94FBF8C5E93EB36B709 /* linear_layer.h */ /* linear_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = linear_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/linear_layer.h"; sourceTree = SOURCE_ROOT; };
+		CFA7DCC7376810F922185EF7 /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		D0394077A7CCA760BC9E47B5 /* biginteger.h */ /* biginteger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = biginteger.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/biginteger.h"; sourceTree = SOURCE_ROOT; };
+		D0E57AC8ADB3FA92D5E79B13 /* 2653-9246-1821-1976 */ /* 2653-9246-1821-1976 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "2653-9246-1821-1976"; path = "../../Source/tiny-dnn-master/vc/vc14/2653-9246-1821-1976"; sourceTree = SOURCE_ROOT; };
+		D14CCBDEC35B6F08C89E72DA /* kernel_SSE.h */ /* kernel_SSE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = kernel_SSE.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/kernel_SSE.h"; sourceTree = SOURCE_ROOT; };
+		D1672870A05D2B850F2A71A3 /* average_unpooling_layer.h */ /* average_unpooling_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = average_unpooling_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/average_unpooling_layer.h"; sourceTree = SOURCE_ROOT; };
+		D1BE6899EB85CC1FBF682E29 /* xiterable.hpp */ /* xiterable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xiterable.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xiterable.hpp"; sourceTree = SOURCE_ROOT; };
+		D1C123CA0F4A705875D5A9F8 /* xarray.hpp */ /* xarray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xarray.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xarray.hpp"; sourceTree = SOURCE_ROOT; };
+		D25AE565A0333C649C3DFA2A /* functional.hpp */ /* functional.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = functional.hpp; path = "../../Source/tiny-dnn-master/cereal/types/functional.hpp"; sourceTree = SOURCE_ROOT; };
+		D3908FC999D37E7DADBC5D43 /* global_avepool_op.h */ /* global_avepool_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = global_avepool_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/global_avepool_op.h"; sourceTree = SOURCE_ROOT; };
+		D3CE0F8272917CF4B6A4EC9F /* xstrides.hpp */ /* xstrides.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xstrides.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xstrides.hpp"; sourceTree = SOURCE_ROOT; };
+		D487DF8957CEC1F12EBFCF22 /* README */ /* README */ = {isa = PBXFileReference; lastKnownFileType = file; name = README; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/README"; sourceTree = SOURCE_ROOT; };
+		D6056D338DE04E93A10CD244 /* embed.cl */ /* embed.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = embed.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/embed.cl"; sourceTree = SOURCE_ROOT; };
+		D63FF5607BE4CFB60B676FDC /* README.md */ /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = README.md; path = "../../Source/tiny-dnn-master/README.md"; sourceTree = SOURCE_ROOT; };
+		D71D578195073DE00D1D3350 /* allocator.h */ /* allocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/allocator.h"; sourceTree = SOURCE_ROOT; };
+		D79738BE02789E1F82D683EA /* bnll.cl */ /* bnll.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = bnll.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/bnll.cl"; sourceTree = SOURCE_ROOT; };
+		D7E4E78A7B3A9CC49F219309 /* xassign.hpp */ /* xassign.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xassign.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xassign.hpp"; sourceTree = SOURCE_ROOT; };
+		D7F5398945AAD02E948AAB46 /* stream.h */ /* stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/stream.h"; sourceTree = SOURCE_ROOT; };
+		D7F7F0BAC49DF813BE53524F /* mul_Nx8_Mx8_neon.py */ /* mul_Nx8_Mx8_neon.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = mul_Nx8_Mx8_neon.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/mul_Nx8_Mx8_neon.py"; sourceTree = SOURCE_ROOT; };
+		DB016987797FCFCCCCDA856A /* xcomplex.hpp */ /* xcomplex.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcomplex.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xcomplex.hpp"; sourceTree = SOURCE_ROOT; };
+		DC5A90AE2F29AA72B233DE28 /* filereadstream.h */ /* filereadstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = filereadstream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/filereadstream.h"; sourceTree = SOURCE_ROOT; };
+		DCC29488469CE718B576E4DF /* json.hpp */ /* json.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = json.hpp; path = "../../Source/tiny-dnn-master/cereal/archives/json.hpp"; sourceTree = SOURCE_ROOT; };
+		DCF695E045B8FFC39A1E46C9 /* pair_associative_container.hpp */ /* pair_associative_container.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = pair_associative_container.hpp; path = "../../Source/tiny-dnn-master/cereal/types/concepts/pair_associative_container.hpp"; sourceTree = SOURCE_ROOT; };
+		DD0CDDB963314162C432FB20 /* deconvolutional_layer.h */ /* deconvolutional_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = deconvolutional_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/deconvolutional_layer.h"; sourceTree = SOURCE_ROOT; };
+		DD6EFB40238D74E746BB2815 /* layer.h */ /* layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/layer.h"; sourceTree = SOURCE_ROOT; };
+		DD831F7DEB23F55D5A7E87D3 /* mergecrop.cl */ /* mergecrop.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = mergecrop.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/mergecrop.cl"; sourceTree = SOURCE_ROOT; };
+		DDC6D8FBF937CE9EF2DBD65A /* tensor_utils.h */ /* tensor_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tensor_utils.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/tensor_utils.h"; sourceTree = SOURCE_ROOT; };
+		DED32DEAA303A5BDB83F6886 /* base_class.hpp */ /* base_class.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = base_class.hpp; path = "../../Source/tiny-dnn-master/cereal/types/base_class.hpp"; sourceTree = SOURCE_ROOT; };
+		E05D6F88BC982E4377BAB20B /* im2col.cl */ /* im2col.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = im2col.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/im2col.cl"; sourceTree = SOURCE_ROOT; };
+		E1719FB382BB28FEB1C0B4B4 /* macro.h */ /* macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = macro.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/macro.h"; sourceTree = SOURCE_ROOT; };
+		E1F85439582FEC4922357253 /* error.h */ /* error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = error.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/error/error.h"; sourceTree = SOURCE_ROOT; };
+		E2115AD8BCE48BBFF6633B4A /* make.bat */ /* make.bat */ = {isa = PBXFileReference; lastKnownFileType = file.bat; name = make.bat; path = "../../Source/tiny-dnn-master/docs/make.bat"; sourceTree = SOURCE_ROOT; };
+		E2458A4E5641CE5D32A71081 /* Adding-a-new-layer.md */ /* Adding-a-new-layer.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = "Adding-a-new-layer.md"; path = "../../Source/tiny-dnn-master/docs/developer_guides/Adding-a-new-layer.md"; sourceTree = SOURCE_ROOT; };
+		E370828D053C2B4308826872 /* stdint.h */ /* stdint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdint.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/msinttypes/stdint.h"; sourceTree = SOURCE_ROOT; };
+		E3A3B1E9B79210297E2E1F4A /* qnt_Nx8_neon.py */ /* qnt_Nx8_neon.py */ = {isa = PBXFileReference; lastKnownFileType = file.py; name = qnt_Nx8_neon.py; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/generators/qnt_Nx8_neon.py"; sourceTree = SOURCE_ROOT; };
+		E3ADE7E9130A5D4ACB742D46 /* display.h */ /* display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = display.h; path = "../../Source/tiny-dnn-master/tiny_dnn/io/display.h"; sourceTree = SOURCE_ROOT; };
+		E3BFA9A599554869AAE8C571 /* power_layer.h */ /* power_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = power_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/power_layer.h"; sourceTree = SOURCE_ROOT; };
+		E5FA1B35F7E60F50FE560358 /* index.rst */ /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = file.rst; name = index.rst; path = "../../Source/tiny-dnn-master/docs/how_tos/index.rst"; sourceTree = SOURCE_ROOT; };
+		E5FAFF19DFBC3B92904E7DFA /* output_neon.h */ /* output_neon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = output_neon.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/output_neon.h"; sourceTree = SOURCE_ROOT; };
+		E7555DD23EB6058292449BAF /* avx_deconv2d_kernel.h */ /* avx_deconv2d_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = avx_deconv2d_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/avx_deconv2d_kernel.h"; sourceTree = SOURCE_ROOT; };
+		E8FB2CD861223C5E69E6F5E7 /* multi_thread_common.h */ /* multi_thread_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = multi_thread_common.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/meta/multi_thread_common.h"; sourceTree = SOURCE_ROOT; };
+		E91C75B34510226D89F211E2 /* xview_utils.hpp */ /* xview_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xview_utils.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xview_utils.hpp"; sourceTree = SOURCE_ROOT; };
+		EA1C01287ECAEBAD2C1F5F78 /* params.h */ /* params.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = params.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/params/params.h"; sourceTree = SOURCE_ROOT; };
+		EA2679DB5ADFE548E3839193 /* xio.hpp */ /* xio.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xio.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xio.hpp"; sourceTree = SOURCE_ROOT; };
+		EBBD266F6FF85C09741438CA /* index.rst */ /* index.rst */ = {isa = PBXFileReference; lastKnownFileType = file.rst; name = index.rst; path = "../../Source/tiny-dnn-master/docs/developer_guides/index.rst"; sourceTree = SOURCE_ROOT; };
+		EC67D56BB4468D5EAEF6EFA8 /* layer_factory.h */ /* layer_factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = layer_factory.h; path = "../../Source/tiny-dnn-master/tiny_dnn/io/caffe/layer_factory.h"; sourceTree = SOURCE_ROOT; };
+		ECB6ADD2FEFCE12E976C0B62 /* device-abstraction-uml.puml */ /* device-abstraction-uml.puml */ = {isa = PBXFileReference; lastKnownFileType = file.puml; name = "device-abstraction-uml.puml"; path = "../../Source/tiny-dnn-master/docs/device-abstraction-uml.puml"; sourceTree = SOURCE_ROOT; };
+		ECE414635017B30C4347B872 /* tiny_cnn_test.vcxproj */ /* tiny_cnn_test.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = file.vcxproj; name = tiny_cnn_test.vcxproj; path = "../../Source/tiny-dnn-master/vc/vc14/tiny_cnn_test.vcxproj"; sourceTree = SOURCE_ROOT; };
+		EE351AD174F81CEEE33354AD /* channel.cl */ /* channel.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = channel.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/channel.cl"; sourceTree = SOURCE_ROOT; };
+		EE692AFCC70A5EDB6F9EA0E9 /* pooling_sk.cl */ /* pooling_sk.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = pooling_sk.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/pooling_sk.cl"; sourceTree = SOURCE_ROOT; };
+		EEC04794E5659643AF923E61 /* concat_layer.h */ /* concat_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = concat_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/concat_layer.h"; sourceTree = SOURCE_ROOT; };
+		EEE6301B6EF11A0AB985B463 /* backend_avx.h */ /* backend_avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = backend_avx.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/backend_avx.h"; sourceTree = SOURCE_ROOT; };
+		F0ED6D5ADE1E8149E6205CA8 /* train-images.idx3-ubyte */ /* train-images.idx3-ubyte */ = {isa = PBXFileReference; lastKnownFileType = "file.idx3-ubyte"; name = "train-images.idx3-ubyte"; path = "../../Source/tiny-dnn-master/data/train-images.idx3-ubyte"; sourceTree = SOURCE_ROOT; };
+		F3EB8A420625202CEB36A8E9 /* target_cost.h */ /* target_cost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = target_cost.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/target_cost.h"; sourceTree = SOURCE_ROOT; };
+		F3F7E1EE07856C4C2C06CF76 /* max_unpooling_layer.h */ /* max_unpooling_layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = max_unpooling_layer.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/max_unpooling_layer.h"; sourceTree = SOURCE_ROOT; };
+		F4F47E382C2A0D2602BA6F63 /* TinyDNN-logo-letters-alpha-version.png */ /* TinyDNN-logo-letters-alpha-version.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TinyDNN-logo-letters-alpha-version.png"; path = "../../Source/tiny-dnn-master/docs/logo/TinyDNN-logo-letters-alpha-version.png"; sourceTree = SOURCE_ROOT; };
+		F5B59CF70F91461A20C0CC91 /* xoffsetview.hpp */ /* xoffsetview.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xoffsetview.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xoffsetview.hpp"; sourceTree = SOURCE_ROOT; };
+		F5C91819A0B092D60D460E04 /* output.h */ /* output.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = output.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/internal/output.h"; sourceTree = SOURCE_ROOT; };
+		F5D44451966BF9BEE7F43A9D /* xmath.hpp */ /* xmath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xmath.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xmath.hpp"; sourceTree = SOURCE_ROOT; };
+		F63986382C9353C7F32180C0 /* pooling_nd.cl */ /* pooling_nd.cl */ = {isa = PBXFileReference; lastKnownFileType = file.cl; name = pooling_nd.cl; path = "../../Source/tiny-dnn-master/third_party/cl_kernels/pooling_nd.cl"; sourceTree = SOURCE_ROOT; };
+		F76CD73518D1C0BA5D9E6305 /* CONTRIBUTING.md */ /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; name = CONTRIBUTING.md; path = "../../Source/tiny-dnn-master/CONTRIBUTING.md"; sourceTree = SOURCE_ROOT; };
+		F935EB5791E4BE6AA381EAA4 /* tiny_quantized_fully_connected_kernel.h */ /* tiny_quantized_fully_connected_kernel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tiny_quantized_fully_connected_kernel.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h"; sourceTree = SOURCE_ROOT; };
+		F959D520EC6CBF49A173F644 /* dtoa.h */ /* dtoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dtoa.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/internal/dtoa.h"; sourceTree = SOURCE_ROOT; };
+		F99B1A8A75322FBCDB2D344F /* memorystream.h */ /* memorystream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = memorystream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/memorystream.h"; sourceTree = SOURCE_ROOT; };
+		FA3364D8AA2BAD1EE531C180 /* xview.hpp */ /* xview.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xview.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xview.hpp"; sourceTree = SOURCE_ROOT; };
+		FB34BE64EAEAC012CEE2879D /* layers.h */ /* layers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = layers.h; path = "../../Source/tiny-dnn-master/tiny_dnn/layers/layers.h"; sourceTree = SOURCE_ROOT; };
+		FB6EE4985D5961CD5E4C1601 /* stb_image_write.h */ /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stb_image_write.h; path = "../../Source/tiny-dnn-master/third_party/stb/stb_image_write.h"; sourceTree = SOURCE_ROOT; };
+		FCA1EEDEE31F3577BAD153B8 /* backend_tiny.h */ /* backend_tiny.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = backend_tiny.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/backend_tiny.h"; sourceTree = SOURCE_ROOT; };
+		FD021CFAB5ABE40A99D72ABC /* xstorage.hpp */ /* xstorage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xstorage.hpp; path = "../../Source/tiny-dnn-master/tiny_dnn/xtensor/xstorage.hpp"; sourceTree = SOURCE_ROOT; };
+		FD1D2D8C549EA98DE1D5D2F3 /* eight_bit_int_gemm.h */ /* eight_bit_int_gemm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = eight_bit_int_gemm.h; path = "../../Source/tiny-dnn-master/third_party/gemmlowp/eight_bit_int_gemm/eight_bit_int_gemm.h"; sourceTree = SOURCE_ROOT; };
+		FD2E23B0F2DC98E0E07716FE /* maxpool_grad_op.h */ /* maxpool_grad_op.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = maxpool_grad_op.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/kernels/maxpool_grad_op.h"; sourceTree = SOURCE_ROOT; };
+		FDE78515607DD00AA11FD14A /* filewritestream.h */ /* filewritestream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = filewritestream.h; path = "../../Source/tiny-dnn-master/cereal/external/rapidjson/filewritestream.h"; sourceTree = SOURCE_ROOT; };
+		FE0ACB4FA31598AACDEEC48E /* device.fwd.h */ /* device.fwd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = device.fwd.h; path = "../../Source/tiny-dnn-master/tiny_dnn/core/framework/device.fwd.h"; sourceTree = SOURCE_ROOT; };
+		FE389DF399D26419A37DB899 /* image.h */ /* image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = image.h; path = "../../Source/tiny-dnn-master/tiny_dnn/util/image.h"; sourceTree = SOURCE_ROOT; };
+		FE48582A21897CCB051015E6 /* valarray.hpp */ /* valarray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = valarray.hpp; path = "../../Source/tiny-dnn-master/cereal/types/valarray.hpp"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93A6E7AE0D59936CCED819EE = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38B3B80F1ACBE2D54D5E35AF,
+				19E50645A609C11DED45FFD8,
+				05D00902180506C97716E591,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010A043E2CB6B918E6D52F03 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BF9F98DF886E3730C3855DFC,
+				50F0577D54EA773306936FD9,
+				3D08781D8262C27F57FBBEDC,
+				5A1720535902FDF81B494329,
+				92D37DA9032858DA13BDDE48,
+				28188BFBBF907DA9AC7E2039,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		02BF07869293D6B750EAEDDC /* tiny_dnn */ = {
+			isa = PBXGroup;
+			children = (
+				04CCB5472E543BCB3D545F7D,
+				75D840F73364B7F6B08D4748,
+				1BA8A0C55BB9BA1B578F0193,
+				E37432277FDD5F7ACB93C85B,
+				4E23FCC03C657C04228FD189,
+				D747A196927C6D356983FC11,
+				8B1566B914E1B58F2E0F7DC5,
+				1561DA9DE848834DA5395291,
+				E6620D27ED3D1796817128DA,
+				B9DDB6557CDBF66F2CE85490,
+				B4E4BCC9E9E9E06822C3BD5A,
+				9BA07DA17FD944DB2E857AE8,
+				365849404AE5AD0F4748206E,
+				9A0E66CF636BCA368DE3BD86,
+			);
+			name = tiny_dnn;
+			sourceTree = "<group>";
+		};
+		04CCB5472E543BCB3D545F7D /* activations */ = {
+			isa = PBXGroup;
+			children = (
+				A0FCB8A1CF08011CF8736DD2,
+				24E2E518BAA44477E007FD41,
+				06A6004669658AB71C61DEA7,
+				7863251902F5E63A63CFEA23,
+				A89FBA513EAD2ACDFE706BCF,
+				35329C1139F70F07BF0C66D9,
+				96C1AEEDF9E65E8870054935,
+				64BA1E8F72A654B3B2496242,
+				820C4FAF7F09BAC9075C5C68,
+				6BA72A17A669DD7BE51BB7F7,
+				569A713E0F3D25922D5C0701,
+				23F1DCCD4A6C3975FF8AE91B,
+			);
+			name = activations;
+			sourceTree = "<group>";
+		};
+		0ABB0020EC370703C6D381F9 /* vc14 */ = {
+			isa = PBXGroup;
+			children = (
+				D0E57AC8ADB3FA92D5E79B13,
+				C172357F6549746FEBBD2A76,
+				2F30E9979DB46C8A64386E06,
+				52348B2C81DA02827717168C,
+				A50CC084E5A5FEAD26B1B06B,
+				ECE414635017B30C4347B872,
+			);
+			name = vc14;
+			sourceTree = "<group>";
+		};
+		0C023D34F35893438141FB81 /* eight_bit_int_gemm */ = {
+			isa = PBXGroup;
+			children = (
+				1B9530C52DEC611254B98AD4,
+				FD1D2D8C549EA98DE1D5D2F3,
+			);
+			name = eight_bit_int_gemm;
+			sourceTree = "<group>";
+		};
+		1561DA9DE848834DA5395291 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9839D1AC1ACA47ACD5E72,
+				91968C6EEB659CF049731C22,
+				BBBEA9913819EEEA7AB289CD,
+				71D2231147F19897D8C774F7,
+				2E492583DE90F3FE98364815,
+				0A5C28A618714BF1C7380E95,
+				FE389DF399D26419A37DB899,
+				E1719FB382BB28FEB1C0B4B4,
+				52E81B3A2130370356814E22,
+				83DCBCB202C7169A9D998E9B,
+				4FB7CFC41ED1AADA75996610,
+				2E1DB2486C9986267D3BF793,
+				52B41D6687793BB0D0C8E153,
+				867C4C6F22EFCC90FD93B175,
+				4782CA994D2D1A2F0D453716,
+				39D223A1BE4C35897BAA95FD,
+				947535F771B657CDFE4788BB,
+				F3EB8A420625202CEB36A8E9,
+				BEEA5A7C50EF9B01052DB9B1,
+				C2DFEEF0A65E9981312E5B8B,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		16A6DD31A3CBD1DE4EA41AEC /* public */ = {
+			isa = PBXGroup;
+			children = (
+				CA15C5EDDA67397D674A6FC0,
+				9D3E4268828AE7EEBB094006,
+				8D051FFD3E671AE70974158D,
+				767D534894B7A4AC176A516D,
+				AA0F33824810F57F0CD8C439,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		1A8128E72910508D5640FF93 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				854FAF3884F1EC34A92CDB93,
+				51E4BF515728F1BF383AAE3A,
+				A37AAA86A29DA6BB298873EE,
+				C407A361664222AB3B951699,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		1BA8A0C55BB9BA1B578F0193 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				A4C9DF168B2AC9B543DD0396,
+				51CF17F4FC4E078BDA5E14ED,
+				E3ADE7E9130A5D4ACB742D46,
+				06C0ADE62FAC07007CAF48D4,
+				C182243F74072F1EB6E3FC42,
+			);
+			name = io;
+			sourceTree = "<group>";
+		};
+		1FF5F3B7CED6550BE0FA158C /* tiny-dnn-master */ = {
+			isa = PBXGroup;
+			children = (
+				907641045C837759679520E2,
+				A6BE942D2D98E92A6BF14894,
+				FD9A85EA5997B052DABB2B75,
+				1A8128E72910508D5640FF93,
+				D6A315085B025C5CF3517DBF,
+				02BF07869293D6B750EAEDDC,
+				238E90E8504C6A721D84E317,
+				C237D83639B796F0B6184BDD,
+				26495A7B9D539DF1998549EB,
+				57359C963F40A1ACCBE33EF7,
+				F76CD73518D1C0BA5D9E6305,
+				669DC70E272FA17592B45DB2,
+				83E611585FD8F9B0D08A5A9D,
+				D63FF5607BE4CFB60B676FDC,
+			);
+			name = "tiny-dnn-master";
+			sourceTree = "<group>";
+		};
+		238E90E8504C6A721D84E317 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				0ABB0020EC370703C6D381F9,
+			);
+			name = vc;
+			sourceTree = "<group>";
+		};
+		28188BFBBF907DA9AC7E2039 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				030B38C2157FA963216642FE,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D08781D8262C27F57FBBEDC /* JUCE Library Code */ = {
+			isa = PBXGroup;
+			children = (
+				336CB187148D8773200D1D5D,
+				8F34EC81477C8B05BADE6FE6,
+				20E90F1FE05DD0FE3AB06265,
+				599C8F03533AFA4E2BE408F0,
+				CFA7DCC7376810F922185EF7,
+				10F2D64C7BD7ECFBF0735FE4,
+				5A4880BFE44F9303D1122D96,
+				6E6839FC7902057F618C06BD,
+			);
+			name = "JUCE Library Code";
+			sourceTree = "<group>";
+		};
+		42B121E8D8E2BCEBA724301C /* meta */ = {
+			isa = PBXGroup;
+			children = (
+				622396F23599148C63C0DB98,
+				E8FB2CD861223C5E69E6F5E7,
+				567C01C4CBF3C181BED712B5,
+				83CA66B32E9D2C4AB1417851,
+				A9E63280077F0428AE66A9E6,
+				D487DF8957CEC1F12EBFCF22,
+				B6D99A7A2C8402B772F37169,
+				74F5275C75EF2BE1630DB9CA,
+				847A7ED68C1601AF3E1234A3,
+			);
+			name = meta;
+			sourceTree = "<group>";
+		};
+		4582790310385760A92B6DDF /* error */ = {
+			isa = PBXGroup;
+			children = (
+				9F69F0D3E2DB5CE874AC49ED,
+				E1F85439582FEC4922357253,
+			);
+			name = error;
+			sourceTree = "<group>";
+		};
+		4882D1AD371586C92FCDBCFB /* concepts */ = {
+			isa = PBXGroup;
+			children = (
+				DCF695E045B8FFC39A1E46C9,
+			);
+			name = concepts;
+			sourceTree = "<group>";
+		};
+		4E23FCC03C657C04228FD189 /* lossfunctions */ = {
+			isa = PBXGroup;
+			children = (
+				2704A97588B4325D6DDDD892,
+			);
+			name = lossfunctions;
+			sourceTree = "<group>";
+		};
+		50F0577D54EA773306936FD9 /* JUCE Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7C47762407D751EF19F11F19,
+				606F523BAD82380B1B7A93B2,
+				3F444E7F8B39E242259D8BF5,
+			);
+			name = "JUCE Modules";
+			sourceTree = "<group>";
+		};
+		5840A6CEC21EBE7548458DC0 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				D71D578195073DE00D1D3350,
+				10D0F5F97E94239FACDF779E,
+				3D9710E43A9BBF8A36B9F984,
+				02E834EFE5184FB8F421FA81,
+				1CA74F60BA8DD76146248C3C,
+				B3DF35F8911ACB81A59C2038,
+				C48FB0D354C072398C56691B,
+				B4C104FFCE7F7D3447DFFC51,
+				0725488C552782BF6B05584A,
+				78798950F142F0D760C1CD45,
+				A9B050DD4A975717A54CC99C,
+				D14CCBDEC35B6F08C89E72DA,
+				5CF31238DA24C1900E4E9C86,
+				F5C91819A0B092D60D460E04,
+				E5FAFF19DFBC3B92904E7DFA,
+				AE05F92DEA9C54BA0194EF3C,
+				7E88BAB0F62FFA727F175710,
+				80527165EAB7026CAD09114D,
+				2C15FF181D63C3557EA0BE51,
+				B908039577DBF24EAAD756D4,
+				0B80445C7075BBC0AA11F20F,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		5A1720535902FDF81B494329 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				274EE15A33D36FC2D0E246DF,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5AC1397834659D67AD3C6649 /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				7F9B4BF49E4274E7FB2ED0B5,
+				AB4D51A465D8A5A35CC0D07A,
+				4777DA30A27C29219B2964D7,
+				9C71FD93908EDB16516B8A8D,
+				B63324FF9B2C5A3D5D5E0A21,
+				A9FAB8D1A3D022D4AD53D444,
+				C44FA7D956FA148AFBA9213D,
+			);
+			name = raw;
+			sourceTree = "<group>";
+		};
+		5CC7B4BD3A3E87B22A8276EF /* gemmlowp */ = {
+			isa = PBXGroup;
+			children = (
+				0C023D34F35893438141FB81,
+				5840A6CEC21EBE7548458DC0,
+				42B121E8D8E2BCEBA724301C,
+				B370C53C4CC148AF155B0598,
+				16A6DD31A3CBD1DE4EA41AEC,
+			);
+			name = gemmlowp;
+			sourceTree = "<group>";
+		};
+		622396F23599148C63C0DB98 /* generators */ = {
+			isa = PBXGroup;
+			children = (
+				7686EA083F6AA5F0E13DE5D6,
+				C1B14A78ED869B07F36A6B99,
+				A8DDD8691F091184BA5BCB45,
+				CA0DDE77A58CCDAEC0A04880,
+				3B83EABC319ADD283A809ABB,
+				4D54784C3D2A076428ADF5E7,
+				73FA92B522F633B5ADE37019,
+				628FB537391A0C49455D15CD,
+				D7F7F0BAC49DF813BE53524F,
+				62132DCF559E670A90AD8A37,
+				891E21D5E008FAB7CAE1CA28,
+				E3A3B1E9B79210297E2E1F4A,
+				06578E2CFCD77A6F4FDB4368,
+			);
+			name = generators;
+			sourceTree = "<group>";
+		};
+		6C94571419B8EBB994370935 /* CLCudaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9056EA770E477CD058805,
+				AF8155AC8A3BCA390AB100ED,
+			);
+			name = CLCudaAPI;
+			sourceTree = "<group>";
+		};
+		6DB9362FBB3695CAB3A17A59 /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				6912A9105F4AE536699939B8,
+				E7555DD23EB6058292449BAF,
+				6169D3C1511EF4B7FF4BAA15,
+				43A7731EFA7EA2AB7DC68D57,
+				08F216D7807FC5014CEE3D44,
+				C0423AA9DCF46A56B3E7A741,
+				ACABD430A4FBE063ADFB7271,
+				4ACDB116796F2F6BC6AA6D8F,
+				80FD4545B8625379215A46DB,
+				84BF5F4C80EB44C3969DF93E,
+				B98F9CF9F3E148BF8246C94C,
+				77B4F0B52E73CA058FA5B6CF,
+				1C885EFC3D91E9DBC0580544,
+				1542B61133220DF6086FC590,
+				B1A1A887AC1B48BC81ACB1F4,
+				CD08F0CB7D404A713720A130,
+				CDD089B61A6CE4883ADD7B62,
+				A8A01B085AACECCCC615A770,
+				3C95522D31FE362C25D39897,
+				D3908FC999D37E7DADBC5D43,
+				36DAC0CFB0DAAC62425C2143,
+				51B821CAA69FC61178F61714,
+				15CBF7188CEB6BBA7BFB8787,
+				609578904D86EA5D28B8BCA6,
+				5166BB1F4B23A0E23F7CE746,
+				B6E8825FC334F2F93E4CA3BD,
+				131C1A92AFBAF236746166CE,
+				41268D0FC70760F61D4C46B8,
+				FD2E23B0F2DC98E0E07716FE,
+				8F5C4E09914269A0D96DA6FE,
+				A324233992B3586509F2930F,
+				0B9F09CA1BAB9E101AA6120E,
+				553D60DAF682351D96FE2163,
+				2ADDA582039FACAB612F0F3C,
+				7E12A4D6A4052A794D1C7FDF,
+				569FB784BD254CA9661610C4,
+				A135EF9F73C64D2981490BB9,
+				21DD5D013566E7884479AF0D,
+				85FB37CFFEE1E0BDCF3D5BA2,
+				3354FA9BD4E6F880260F5330,
+				B08161E8D35D727213BBCB65,
+				1EF717EFCF01BE56386C106A,
+				F935EB5791E4BE6AA381EAA4,
+				31B66A7F31C9CA5E77514979,
+			);
+			name = kernels;
+			sourceTree = "<group>";
+		};
+		70C36F5C5E71B56F52685281 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				D0394077A7CCA760BC9E47B5,
+				58C276E9225A6DA632E76FBE,
+				F959D520EC6CBF49A173F644,
+				83B9C6B600CBB85CD976774F,
+				73BEB79365D37B76943EB078,
+				49E887378BBF1B00D340B314,
+				62FEC5A860843A1D67F1C381,
+				99E6A828B59B79E942BAE145,
+				967E7EB96B821D02F97C87E0,
+				2FF65B6425BA65557990DA21,
+				66D9257C054C1B66573D3EE8,
+				78A8515849746DBD6DC43565,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		737113E731B918BD04B718B3 /* details */ = {
+			isa = PBXGroup;
+			children = (
+				74B67AF540C603C72ADB5706,
+				9D7B6A922820542C95948229,
+				B0A269C07EBC956CEE3B4CF3,
+				C28C42A893664825E912B9A6,
+				CF273706F36E10C38256E051,
+				4E337BE21738557E00954B17,
+			);
+			name = details;
+			sourceTree = "<group>";
+		};
+		75270DF7A49CA636C5589859 /* update_log */ = {
+			isa = PBXGroup;
+			children = (
+				8990560AA8B1985D4C473CA7,
+				CF80704C369E510B0F713BE5,
+			);
+			name = update_log;
+			sourceTree = "<group>";
+		};
+		75D840F73364B7F6B08D4748 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				8F076BBC2AFF7D128FE74E2A,
+				6DB9362FBB3695CAB3A17A59,
+				E5BFA0D92AC3C1CB47ED3F4D,
+				19622B77A5ED002D54C0037A,
+				EEE6301B6EF11A0AB985B463,
+				FCA1EEDEE31F3577BAD153B8,
+				12B4FC8541973738B4D28BD8,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		769D8CC12DAC179C3E8B6442 /* developer_guides */ = {
+			isa = PBXGroup;
+			children = (
+				E2458A4E5641CE5D32A71081,
+				EBBD266F6FF85C09741438CA,
+				95A0BCEF31E9978BBF571CCB,
+			);
+			name = developer_guides;
+			sourceTree = "<group>";
+		};
+		7C0D32C7FAF919776A0969B7 /* rapidjson */ = {
+			isa = PBXGroup;
+			children = (
+				4582790310385760A92B6DDF,
+				70C36F5C5E71B56F52685281,
+				E7C3713933A41E1AC3A82D3D,
+				18CAE479CF2ADC747866BFAF,
+				8946AF68635BC72437EA175C,
+				6685900DF6A5041F542C3361,
+				81D0C0DCCBF9C20BB246E783,
+				DC5A90AE2F29AA72B233DE28,
+				CB53C7B0487A51BAB886A26F,
+				FDE78515607DD00AA11FD14A,
+				4BDC5DE96D977177246347B9,
+				15F58D160E71593FD1DC73B7,
+				A35F01E0DE152E661F76C02D,
+				B820D1FDD3C2CEB551183E77,
+				C3D60BFB95A1EBF9BFD67128,
+				F99B1A8A75322FBCDB2D344F,
+				37207C6CEC5A1AE27D8B7836,
+				28043CDF65543A6AC68656F3,
+				39DA004A5C1777FEF1153AE9,
+				1358DAA277F9BE84612828BA,
+				7FD8C1DD40C7E633F2AC029D,
+				8F59960082C942AA1055DECE,
+				D7F5398945AAD02E948AAB46,
+				6B5E728ADB5236F29CCC97F1,
+				BA860040FE7AC92A14FECA68,
+			);
+			name = rapidjson;
+			sourceTree = "<group>";
+		};
+		7CB341B43382B9C0B1C65BF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02991E2F8EDCC3505A59AF1F,
+				B18EF93C08DD50ACB533D2EF,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7E562F13E66EA3FE35AE13E8 /* archives */ = {
+			isa = PBXGroup;
+			children = (
+				2FE7BD62112FB2AFD790EA6D,
+				6AB3E039971E4376B4C0E0FF,
+				DCC29488469CE718B576E4DF,
+				162374765ACC4FC7BFDFF428,
+				B6E4B06A35FB722699C4BF1E,
+			);
+			name = archives;
+			sourceTree = "<group>";
+		};
+		7F9B4BF49E4274E7FB2ED0B5 /* GidoleFont */ = {
+			isa = PBXGroup;
+			children = (
+				78996C50F4A10F981E7734C9,
+				2904326CEDAF77CDF69159DA,
+				C8360AF814392E23764669A6,
+				53662EA71FD149C6D3A4BC5D,
+			);
+			name = GidoleFont;
+			sourceTree = "<group>";
+		};
+		802D7D8A41AB04F39657CC5A /* getting_started */ = {
+			isa = PBXGroup;
+			children = (
+				B308916C72E866D33F81663C,
+				1E09647BB50BF6A81C3663ED,
+			);
+			name = getting_started;
+			sourceTree = "<group>";
+		};
+		834A3B0A4FEB088A7A85692D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A3985EED39BA476EFA1B44E7,
+				7CB341B43382B9C0B1C65BF7,
+				1FF5F3B7CED6550BE0FA158C,
+				69E3E71F2899147FDD150104,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8B1566B914E1B58F2E0F7DC5 /* optimizers */ = {
+			isa = PBXGroup;
+			children = (
+				71AAA338A444A2A4591E1FF9,
+			);
+			name = optimizers;
+			sourceTree = "<group>";
+		};
+		8F076BBC2AFF7D128FE74E2A /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				FE0ACB4FA31598AACDEEC48E,
+				65546A1DA0850B6ADF4E0EB2,
+				478644E070F6C7AE8E3A0409,
+				607BF69631F80E7BF4B03345,
+				2546C596FCDB9BF700AE4FE8,
+				22AB0195E2804E7C122C9C6A,
+				DDC6D8FBF937CE9EF2DBD65A,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		907641045C837759679520E2 /* cereal */ = {
+			isa = PBXGroup;
+			children = (
+				7E562F13E66EA3FE35AE13E8,
+				737113E731B918BD04B718B3,
+				DC5DAE49F14EB5E479436CAC,
+				C68B0CC3CAEAADF28177C232,
+				0CC517E808E9EAEC2389F16B,
+				6A45794B4D74E9D668FAEFE9,
+				BB2AE4B507A2802097E4FC6E,
+			);
+			name = cereal;
+			sourceTree = "<group>";
+		};
+		92D37DA9032858DA13BDDE48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5740B9DDE4FEAC109BC11775,
+				7091342BF12CF6516D093EEA,
+				0DF2EA144B70736551EAAC4D,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E85E597DDEEDF75C2B8A2DD /* layers */ = {
+			isa = PBXGroup;
+			children = (
+				581454345FB7C63D38F9298E,
+				685A1CE818C3A28B9580956B,
+			);
+			name = layers;
+			sourceTree = "<group>";
+		};
+		A3985EED39BA476EFA1B44E7 /* Data Processing */ = {
+			isa = PBXGroup;
+			children = (
+				52BEB2F69A65EFE0B4F8C431,
+				4F3DFC3AE5575D8248DFE615,
+				7696D459AC5F6485A61C8447,
+				689B2EDBD37F6A54AF45962A,
+				97F612088771A746C0D84386,
+				AB27A809147574DD482E96C6,
+			);
+			name = "Data Processing";
+			sourceTree = "<group>";
+		};
+		A4C9DF168B2AC9B543DD0396 /* caffe */ = {
+			isa = PBXGroup;
+			children = (
+				A700E19ACC0E588021E71159,
+				62666D85E3E96B084A70FBBA,
+				EC67D56BB4468D5EAEF6EFA8,
+				A57D1E01EAD6A4DBC37E9EC5,
+			);
+			name = caffe;
+			sourceTree = "<group>";
+		};
+		A6BE942D2D98E92A6BF14894 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				35DA0EF358458B87C41990BC,
+				16669A80068282F9288DBBBC,
+				F0ED6D5ADE1E8149E6205CA8,
+				2F5B26D0C9CB643B58CA0767,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		A91D96E10B3DB5C58018E3DE /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				AF02E0AE6E6C4D16E2DE10A5,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		AD642E7E8E32220E6617D248 /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2A8141E1E4CF143C040B8,
+				3B89131911A6ED64B9EE6F91,
+				FB6EE4985D5961CD5E4C1601,
+			);
+			name = stb;
+			sourceTree = "<group>";
+		};
+		B370C53C4CC148AF155B0598 /* profiling */ = {
+			isa = PBXGroup;
+			children = (
+				CC809B997B59AE5717DC609B,
+				C85D7291B825763D51A5AFD0,
+			);
+			name = profiling;
+			sourceTree = "<group>";
+		};
+		BDA57198B7CEF202696BF40B /* cl_kernels */ = {
+			isa = PBXGroup;
+			children = (
+				B88A069A9A367479315AE480,
+				5832C34640214ECFE413DB08,
+				074F4625B6F069294938DF7D,
+				17B1E911A48417417616356E,
+				7A81B366FD84BA17EEC1EFC1,
+				D79738BE02789E1F82D683EA,
+				EE351AD174F81CEEE33354AD,
+				2F4DC21493CDE6704556D07F,
+				8BE404BB3C6C89FC57CF2580,
+				0A505F82990BA93962BBA52A,
+				19DB110528A707EF57387DC5,
+				349453D967A3732BAC996244,
+				7EF4E8ECFF9F58A39EE369FE,
+				A789AAD046B7A377285D5E27,
+				C6B805D13645A893DF93594E,
+				D6056D338DE04E93A10CD244,
+				841E53D51D69F062CA0AC84A,
+				59A125A231BA8A69ABAA4B3D,
+				E05D6F88BC982E4377BAB20B,
+				8F5C7E3C1125BDBFD3DCD054,
+				1DC14FD01E41B8F8D629967E,
+				ABE18DB8098A40BA444441B3,
+				94D84617760A28DFFE7DE2D8,
+				DD831F7DEB23F55D5A7E87D3,
+				827E56D7E00BB7BB55743C51,
+				F63986382C9353C7F32180C0,
+				EE692AFCC70A5EDB6F9EA0E9,
+				37F9C2BBADDA22929F4D9640,
+				4A432D53835173DE072974B8,
+				64311CE3BFE392711FE24EF4,
+				AFF6A0F81E90DB368CF0A535,
+			);
+			name = cl_kernels;
+			sourceTree = "<group>";
+		};
+		BF9F98DF886E3730C3855DFC /* ToneTrainer - Model Playground */ = {
+			isa = PBXGroup;
+			children = (
+				834A3B0A4FEB088A7A85692D,
+			);
+			name = "ToneTrainer - Model Playground";
+			sourceTree = "<group>";
+		};
+		C68B0CC3CAEAADF28177C232 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				4882D1AD371586C92FCDBCFB,
+				899EC8BCAD58583F183CD908,
+				DED32DEAA303A5BDB83F6886,
+				01749924ED6566F89F19958C,
+				4710C182B8D2F7A3FF3A9C79,
+				8FF0BB30E13795009898F1A6,
+				2F11C2F74921C819E6C1D924,
+				95EFAF170619C44F4DB131CF,
+				693EF9B7A91ADA9435748197,
+				3B12FE7CEDFC98C10A241390,
+				D25AE565A0333C649C3DFA2A,
+				B327C78D533154EC2FFFA708,
+				6FBE9FC910FF93CCD064154B,
+				7EED5BADBB34D5D60AFC909C,
+				4969631C3A976EC7714666A4,
+				8517D0F1B443C87CB1DA3F7B,
+				83349A43AA2298AD7214037D,
+				9E9B02C3D3D7C14D7DE6BA19,
+				3A0EFDBD6967AFD81220352D,
+				C86BE7AD50DAF865A20CCE29,
+				54C0B33FA1B2A3E4D72C3A0D,
+				A9D015534548110A7E6F816E,
+				B883C7164718BAD9AEA0FEF1,
+				FE48582A21897CCB051015E6,
+				443BDE539E095F9AE9774DE3,
+			);
+			name = types;
+			sourceTree = "<group>";
+		};
+		D0C8682C2762AC8E7C3861DC /* how_tos */ = {
+			isa = PBXGroup;
+			children = (
+				2A0A15647447A5FE30BC9F58,
+				E5FA1B35F7E60F50FE560358,
+				AC8BCD4E77A1BE29127D231C,
+				519A3ADA446041056C217300,
+			);
+			name = how_tos;
+			sourceTree = "<group>";
+		};
+		D6A315085B025C5CF3517DBF /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				BDA57198B7CEF202696BF40B,
+				6C94571419B8EBB994370935,
+				5CC7B4BD3A3E87B22A8276EF,
+				AD642E7E8E32220E6617D248,
+				AEEB2023AD9121C862955F82,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+		D747A196927C6D356983FC11 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BD080E968308714A445A9694,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		DC5DAE49F14EB5E479436CAC /* external */ = {
+			isa = PBXGroup;
+			children = (
+				7C0D32C7FAF919776A0969B7,
+				FE0FEDCEEA5DE6435662AF09,
+				A32F2DEE0ADC11EF557C3E9B,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		E37432277FDD5F7ACB93C85B /* layers */ = {
+			isa = PBXGroup;
+			children = (
+				3F601029036BEAA560D7B645,
+				78D8964B023A604B651FCC11,
+				D1672870A05D2B850F2A71A3,
+				4D9E6D8D47C96CFC80B62265,
+				C5D4EC155FF05C97B2BCB1D8,
+				199E6CC0D589F32FACED092A,
+				EEC04794E5659643AF923E61,
+				C713B63D8555098344A8732E,
+				DD0CDDB963314162C432FB20,
+				9FF4E5486A3256C63E943DFB,
+				131D64C0D823ED177CF7B5BD,
+				B3F37B9524516A4DDC1863F1,
+				5D40CC5CD02FE0F353A9C3DE,
+				53E97075F396DC5F9570F315,
+				B2E1297420048F37528766D5,
+				DD6EFB40238D74E746BB2815,
+				FB34BE64EAEAC012CEE2879D,
+				CFA2D94FBF8C5E93EB36B709,
+				548BF9DBFC78450E30C09958,
+				0AADADF703D06B79FFC99A30,
+				B6DF4DF3AD4E421EB6FB6EEE,
+				F3F7E1EE07856C4C2C06CF76,
+				2E1C0235389AD7C084D0A10D,
+				E3BFA9A599554869AAE8C571,
+				7F19E218E5E7BAC0DEF9D318,
+				B7DCA1EB8FD9C58BA86BF7CB,
+				98523E6E8626188ACAF3A6B3,
+				5AA2ABEB37ADB9E386C1365B,
+				BCE0A9CCDD98D89720310506,
+				2D30CD6BC77CEC506941CE81,
+				BD3A93A3884E4778C0E947B3,
+			);
+			name = layers;
+			sourceTree = "<group>";
+		};
+		E5BFA0D92AC3C1CB47ED3F4D /* params */ = {
+			isa = PBXGroup;
+			children = (
+				2BAD38E857C8AEBCA82B2BFF,
+				85F3D067E93FC04FB683D51D,
+				5AE64C7BDD95A63F2A1F951B,
+				B5C22889F1561A8ED2CC657F,
+				5FAA0EBF356123840E1A2EEF,
+				C079F309A4BC34CCE7B3C2EA,
+				923E2AD5B9125C7B523B3A33,
+				EA1C01287ECAEBAD2C1F5F78,
+				505369616A8BBF710EF2065F,
+			);
+			name = params;
+			sourceTree = "<group>";
+		};
+		E6620D27ED3D1796817128DA /* xtensor */ = {
+			isa = PBXGroup;
+			children = (
+				6C7E0FB0917277581C73DC70,
+				D1C123CA0F4A705875D5A9F8,
+				D7E4E78A7B3A9CC49F219309,
+				397DA637B708579F9CE6266E,
+				A87850FB4F75633C047586CF,
+				CD1281CE9F810D30758FF618,
+				26FACDF5D3CCD88F44D5B4F9,
+				DB016987797FCFCCCCDA856A,
+				06792E7CECBF1C5C74318BAA,
+				8B297A9DB8D433145BAB92F4,
+				30F1E1BCBD4CDCE052230C4C,
+				2148759F92F6EBC597623C8E,
+				B7375938DEB93BB776BFBB55,
+				1297371228EBAA9E4DAD2D99,
+				0900DA402B76954F45B1954D,
+				B9C2302D38710D6AE0BCB197,
+				76478E33D516DAB94AF662AF,
+				B5B2CD126A3CE0313BC90476,
+				EA2679DB5ADFE548E3839193,
+				D1BE6899EB85CC1FBF682E29,
+				207BA80D477728F1244AFCEB,
+				7CD2C88F69EEE95F9BE319F1,
+				F5D44451966BF9BEE7F43A9D,
+				A89983B59B9F0251554B8631,
+				89E11B16E446F612D038AC66,
+				F5B59CF70F91461A20C0CC91,
+				1F766264DCD91CC944D321E2,
+				8A4B3C7FD6B7AB513BF69889,
+				7B7E925AAEAD95BFDCF94397,
+				C86019749450608A6EFEB205,
+				30000C15F1CB7883F63C6EF5,
+				B05DD79E3309F2A6DF779208,
+				B8D5850F115892759E415C6A,
+				FD021CFAB5ABE40A99D72ABC,
+				05599A6CBAC3925072DEC4A4,
+				D3CE0F8272917CF4B6A4EC9F,
+				7230EC3F6053B043FE9770F8,
+				27D3AD3547AAAF503236D1F2,
+				01204FAB685091B5AB4924DF,
+				6432E86CEE184BA059730BAC,
+				81CEF5433521C24D0443AF4F,
+				FA3364D8AA2BAD1EE531C180,
+				E91C75B34510226D89F211E2,
+			);
+			name = xtensor;
+			sourceTree = "<group>";
+		};
+		E7C3713933A41E1AC3A82D3D /* msinttypes */ = {
+			isa = PBXGroup;
+			children = (
+				375D9C5CA2658A594A2A6E40,
+				E370828D053C2B4308826872,
+			);
+			name = msinttypes;
+			sourceTree = "<group>";
+		};
+		F60705A13A9C397334BE9908 /* logo */ = {
+			isa = PBXGroup;
+			children = (
+				5AC1397834659D67AD3C6649,
+				68ED750E551016DC80CBC623,
+				F4F47E382C2A0D2602BA6F63,
+				62BA34B26AB845D6F56A8E54,
+				2399782BDAF5FEAA51518F87,
+				2C7DC129476A302B62B8BD9B,
+			);
+			name = logo;
+			sourceTree = "<group>";
+		};
+		FD9A85EA5997B052DABB2B75 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				769D8CC12DAC179C3E8B6442,
+				802D7D8A41AB04F39657CC5A,
+				D0C8682C2762AC8E7C3861DC,
+				9E85E597DDEEDF75C2B8A2DD,
+				F60705A13A9C397334BE9908,
+				A91D96E10B3DB5C58018E3DE,
+				75270DF7A49CA636C5589859,
+				602077B7C58CC3A428774D43,
+				46766259B7208EFA429F7F19,
+				700660E22B6E14654EC7A486,
+				ECB6ADD2FEFCE12E976C0B62,
+				1D66D4D878F5AA8B40084355,
+				59F99BED4CFB206DFD29D82D,
+				854841C708623A9B7173C265,
+				E2115AD8BCE48BBFF6633B4A,
+				B51F037C94EF28D1B3DF19C3,
+				4D2A056697E6D67930B03A0B,
+			);
+			name = docs;
+			sourceTree = "<group>";
+		};
+		FE0FEDCEEA5DE6435662AF09 /* rapidxml */ = {
+			isa = PBXGroup;
+			children = (
+				24343E2D8CA00885558F7AEC,
+				3D2C2AE9C9B5756CC3E245A4,
+				4C74874BC10F9019CC26BCAF,
+				1FA9AE3768C7D0E45F82D457,
+				99D57DF00A789A7C2CE43418,
+				1AD8C1BB4BFCF202ECD95F1C,
+			);
+			name = rapidxml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B11A2FD472FCF2E8171F544B /* ToneTrainer - Model Playground - ConsoleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19043A1C4D43018A8039F9E7;
+			buildPhases = (
+				1ADA4283F645BC867595624F,
+				0A1125C08518E749DB958793,
+				93A6E7AE0D59936CCED819EE,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ToneTrainer - Model Playground - ConsoleApp";
+			productName = "ToneTrainer - Model Playground";
+			productReference = 030B38C2157FA963216642FE;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73A6F9F423958CF8D7715513 = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 9ECB0A97AA9B289D26079144;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 010A043E2CB6B918E6D52F03;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B11A2FD472FCF2E8171F544B,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADA4283F645BC867595624F = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				670E3324337C62EF60AC33E1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A1125C08518E749DB958793 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A877095485330CF7BD7C10E3,
+				40D1EA31A2CE6BDFAE352664,
+				F900E03A670E7EC2D4950CB6,
+				2BB43B1C98676AA64FAC7C69,
+				9F8D59E7F05EBA73FB8C35EC,
+				8D0E141019EEC713B08E377A,
+				0855825131B9A5A29E0BDEAC,
+				E0D97B07A64EF6184BFE115C,
+				0D400592CA3438F20A946408,
+				25BDE9DB9C0F9080AAB6D875,
+				9ED1FB3D9FE225A4136BF705,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		018E3C464798483D9E6DBF5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JUCE_STANDALONE_APPLICATION=1",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/matttwitchen/Desktop/JUCE/modules",
+					"\"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master\"",
+					"\"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master/tiny_dnn\"",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "/usr/bin";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/matttwitchen/Desktop/JUCE/modules \"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master\" \"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master/tiny_dnn\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.ToneTrainerModelPlayground;
+				PRODUCT_NAME = "ToneTrainer - Model Playground";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		032EAC57585C0F8363EAF4F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "ToneTrainer - Model Playground";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1FC7CC7669D7FFAF2E6EC67D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "ToneTrainer - Model Playground";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		22610E98725D7E5ED9444449 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70005",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JUCE_STANDALONE_APPLICATION=1",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/matttwitchen/Desktop/JUCE/modules",
+					"\"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master\"",
+					"\"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master/tiny_dnn\"",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "/usr/bin";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/matttwitchen/Desktop/JUCE/modules \"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master\" \"/Users/matttwitchen/Desktop/Diss/repos/ToneTrainer - Model Playground/Source/tiny-dnn-master/tiny_dnn\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.ToneTrainerModelPlayground;
+				PRODUCT_NAME = "ToneTrainer - Model Playground";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19043A1C4D43018A8039F9E7 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018E3C464798483D9E6DBF5B,
+				22610E98725D7E5ED9444449,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9ECB0A97AA9B289D26079144 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032EAC57585C0F8363EAF4F1,
+				1FC7CC7669D7FFAF2E6EC67D,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73A6F9F423958CF8D7715513 /* Project object */;
+}
